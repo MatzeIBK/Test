@@ -13,7 +13,7 @@
     <!-- Styles init -->
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-
+    <link rel="stylesheet" href="css/container.css" type="text/css">
 
     <title>Electric Love Festival</title>
 </head>
@@ -38,12 +38,17 @@
 
                 <!-- TimeTable -->
                 <div class="col-xs-12">
-                    <button onclick="timetable_show()">
+                    <button onclick="swap(one, two)">
                         <img class="col-xs-12" src="img/timeTable.png" alt="Time Table"/>
                     </button>
                 </div>
+
                 <!-- FAQ -->
-                <div class="button_sidebar col-xs-12">FAQ</div>
+                <div class="col-xs-12">
+                    <button onclick="swap(two, one)">
+                        <img class="col-xs-12" src="img/faq.png" alt="FAQ"/>
+                    </button>
+                </div>
             </div>
 
 
@@ -56,14 +61,17 @@
 
 
 
+            <div class="container_Main container-fluid"
+                <p id="one">Main Content</p>
+                <p style="display:none" id="two">Not Visible</p>
+            </div>
 
-
-
-
-
-            <div class="container_Main container-fluid" id="demo">Main Content</div>
     </div>
 
+
+
+
+    <!-- Footer -->
     <div class="container_Footer container">
         <div class="footer col-xs-12">Footer
             <div class="visible-xs-block">only Mobile</div>

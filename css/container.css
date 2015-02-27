@@ -26,6 +26,13 @@
     border: solid;
 }
 
+.container_show {
+    visibility: hidden;
+    height: 500px;
+    text-align: center;
+    background-color: #3e8f3e;
+}
+
 .footer {
     height: 60px;
     background-color: deeppink;
@@ -34,3 +41,4 @@
     border: solid;
     margin-top: 5px;
 }
+

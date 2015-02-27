@@ -1,10 +1,9 @@
 
 
 /* Timetable pressed */
-function timetable_show() {
-    var x = document.getElementById("demo");
-    x.style.fontSize = "70px";
-    x.style.color = "red";
-
+function swap(one, two) {
+    var x = document.getElementsByClassName("container_Main");
+        document.getElementById(two).style.display = 'block';
+        document.getElementById(one).style.display = 'none';
 
 }
