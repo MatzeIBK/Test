@@ -20,10 +20,7 @@
 
 <body>
 
-    <div class="visible-xs-block">only Mobile</div>
-    <div class="visible-sm-block">only Tablet</div>
-    <div class="visible-md-block">only Desktop</div>
-    <div class="visible-lg-block">only Large Desktop</div>
+
 
 <!-- header -->
 
@@ -41,9 +38,9 @@
 
                 <!-- TimeTable -->
                 <div class="col-xs-12">
-                    <a href="timeTable.html">
+                    <button onclick="timetable_show()">
                         <img class="col-xs-12" src="img/timeTable.png" alt="Time Table"/>
-                    </a>
+                    </button>
                 </div>
                 <!-- FAQ -->
                 <div class="button_sidebar col-xs-12">FAQ</div>
@@ -64,11 +61,16 @@
 
 
 
-            <div class="container_Main container-fluid">Main Content</div>
+            <div class="container_Main container-fluid" id="demo">Main Content</div>
     </div>
 
     <div class="container_Footer container">
-        <div class="footer col-xs-12">Footer</div>
+        <div class="footer col-xs-12">Footer
+            <div class="visible-xs-block">only Mobile</div>
+            <div class="visible-sm-block">only Tablet</div>
+            <div class="visible-md-block">only Desktop</div>
+            <div class="visible-lg-block">only Large Desktop</div>
+        </div>
     </div>
 
 
