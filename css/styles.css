@@ -1,15 +1,16 @@
 .header {
-    height: 100px;
-    background-color: deeppink;
+    vertical-align: middle;
     text-align: center;
+    height: 80px;
+    background-color: deeppink;
     color: white;
-    font-size: 50px;
+    font-size: 30px;
     border: solid;
     margin-bottom: 5px;
-}
 
+}
 .button_img {
-    width: 150px;
+    width: 100px;
     height: 30px;
 }
 

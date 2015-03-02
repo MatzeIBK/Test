@@ -24,7 +24,7 @@
 
 <!-- header -->
 
-    <div class="container_header container">
+    <div class="container">
         <div class="header col-xs-12">Electric Love</div>
     </div>
 
@@ -32,9 +32,13 @@
 
     <div class="container">
             <!-- Sidebar for buttons -->
-            <div class="container_Sidebar col-xs-12">
+            <div class="col-xs-12 container_Sidebar">
                 <!-- GoogleMaps -->
-                <div class="button_sidebar col-xs-12">Map</div>
+                <div>
+                    <button class="col-xs-12" onclick="back_showHome()">
+                        <img class="col-xs-12" src="img/back_button.png" alt="Back"/>
+                    </button>
+                </div>
 
                 <!-- TimeTable -->
                 <div class="col-xs-12">
@@ -62,8 +66,10 @@
 
 
             <div class="container_Main container-fluid">
-                <div id="main">Main Content</div>
-                <div style="display:none" id="timeTable">Not Visible</div>
+                <div class="main" id="main">Main Content</div>
+                <div class="container_timetable" style="display:none" id="timeTable">Not Visible
+                    <div class="col-xs-12">Hardwell</div>
+                </div>
             </div>
 
     </div>
