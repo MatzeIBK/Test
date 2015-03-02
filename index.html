@@ -5,11 +5,13 @@
     <meta name="viewport" content="widht=device-width, intial-scale=1">
 
     <!-- Bootstrap init -->
+    <script src="jquery-1.11.2.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="phonegap.js"></script>
     <script src="js/main.js"></script>
+
 
 
     <!-- Styles init -->
@@ -34,23 +36,20 @@
 
     <div id="ID_container_sidebar" class="container">
             <!-- Sidebar for buttons -->
-            <div class="col-xs-12 class_container_Sidebar">
+            <div class="col-xs-3 class_container_Sidebar">
                 <!-- GoogleMaps -->
-                <div>
+                <div class="row">
                     <button class="col-xs-12" onclick="back_showHome()">
                         <img class="col-xs-12" src="img/back_button.png" alt="Back"/>
                     </button>
-                </div>
+                 <!-- TimeTable -->
 
-                <!-- TimeTable -->
-                <div>
                     <button onclick="showTimeTable()">
                         <img class="col-xs-12" src="img/timeTable.png" alt="Time Table"/>
                     </button>
-                </div>
 
                 <!-- FAQ -->
-                <div>
+
                     <button onclick="load_faq()">
                         <img class="col-xs-12" src="img/faq.png" alt="FAQ"/>
                     </button>
@@ -67,12 +66,12 @@
 
 
 
-            <div id="ID_container_main" class="class_container_Main container-fluid">
+            <div id="ID_container_main" class="class_container_Main col-xs-9">
                 <div id="ID_container_hello">Main Content</div>
 
                 <div id="ID_container_timeTable" class="class_container_timetable" style="display:none">
 
-                    <div class="class_timetable_element">
+                    <div class="class_timetable_element row">
                         <div class="class_timetable_element_image" style="border: solid; float: left"></div>
                         <div class="class_timetable_element" style="border: solid; float: right"></div>
                     </div>

@@ -21,3 +21,26 @@ function back_showHome() {
 function load_faq(){
     document.getElementById("ID_container_main").innerHTML='<object type="text/html" data="faq.html"></object>';
 }
+
+// document ready!
+$(function() {
+    var $main = $('#ID_container_main');
+
+    var $content = $('<div class="content">hallo</div>');
+
+    $main.prepend($content);
+
+    var test = [
+        {
+            title: 'hallo',
+            author: 'wusler'
+        }, {
+            title: 'title',
+            author: 'wusler1'
+        }
+    ];
+
+    for(var i = 0; i < test.length; i++) {
+        $main.append('<div class="wusler">'+ test[i].title +' / ' + test[i].author + '</div>')
+    }
+});

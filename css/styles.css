@@ -1,6 +1,7 @@
 .button_img {
     width: 100px;
     height: 30px;
+    padding: 10px 0px;
 }
 
 .class_timetable_element {
@@ -18,4 +19,10 @@
 
 body {
     background-color: grey;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 9px;
+    }
 }
