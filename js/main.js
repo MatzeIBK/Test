@@ -18,6 +18,6 @@ function back_showHome() {
     id_cont_timetable.style.display = "none";
 }
 
-function loadFAQ() {
-
+function load_faq(){
+    document.getElementById("ID_container_main").innerHTML='<object type="text/html" data="timeTable.html"></object>';
 }
