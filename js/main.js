@@ -19,5 +19,5 @@ function back_showHome() {
 }
 
 function load_faq(){
-    document.getElementById("ID_container_main").innerHTML='<object type="text/html" data="timeTable.html"></object>';
+    document.getElementById("ID_container_main").innerHTML='<object type="text/html" data="faq.html"></object>';
 }
