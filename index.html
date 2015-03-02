@@ -32,7 +32,7 @@
 
     <div class="container">
             <!-- Sidebar for buttons -->
-            <div class="col-xs-12 container_Sidebar">
+            <div class="col-xs-12 class_container_Sidebar">
                 <!-- GoogleMaps -->
                 <div>
                     <button class="col-xs-12" onclick="back_showHome()">
@@ -41,15 +41,15 @@
                 </div>
 
                 <!-- TimeTable -->
-                <div class="col-xs-12">
+                <div>
                     <button onclick="showTimeTable()">
                         <img class="col-xs-12" src="img/timeTable.png" alt="Time Table"/>
                     </button>
                 </div>
 
                 <!-- FAQ -->
-                <div class="col-xs-12">
-                    <button onclick="swap()">
+                <div>
+                    <button onclick="loadFAQ">
                         <img class="col-xs-12" src="img/faq.png" alt="FAQ"/>
                     </button>
                 </div>
@@ -65,11 +65,23 @@
 
 
 
-            <div class="container_Main container-fluid">
-                <div class="main" id="main">Main Content</div>
-                <div class="container_timetable" style="display:none" id="timeTable">Not Visible
-                    <div class="col-xs-12">Hardwell</div>
+            <div id="ID_container_main" class="class_container_Main container-fluid">
+                <div id="ID_container_hello">Main Content</div>
+
+                <div id="ID_container_timeTable" class="class_container_timetable" style="display:none">
+
+                    <div class="class_timetable_element">
+                        <div class="class_timetable_element_image" style="border: solid; float: left"></div>
+                        <div class="class_timetable_element" style="border: solid; float: right"></div>
+                    </div>
+                    <div class="class_timetable_element">Whoo</div>
+
                 </div>
+
+                <div id="ID_container_faq" class="class_container_faq">
+
+                </div>
+
             </div>
 
     </div>

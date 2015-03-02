@@ -1,16 +1,23 @@
 
-
 /* Timetable pressed */
 function showTimeTable() {
-    var x = document.getElementById("main");
-    var y = document.getElementById("timeTable")
-    x.style.display = 'none';
-    y.style.display = true;
+    var id_hello = document.getElementById("ID_container_hello");
+    var id_cont_timetable = document.getElementById("ID_container_timeTable");
+
+    id_hello.style.display = "none";
+    id_cont_timetable.style.display = "block";
 }
 
 /* back button pressed */
 
 function back_showHome() {
-    var x = document.getElementById("main");
-    x.style.display ="block";
+    var id_hello = document.getElementById("ID_container_hello");
+    var id_cont_timetable = document.getElementById("ID_container_timeTable");
+
+    id_hello.style.display = "block";
+    id_cont_timetable.style.display = "none";
+}
+
+function loadFAQ() {
+
 }
