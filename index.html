@@ -17,9 +17,9 @@
     <!-- Styles init -->
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <link rel="stylesheet" href="css/container.css" type="text/css">
 
     <title>Electric Love Festival</title>
+
 </head>
 
 <body>
@@ -34,9 +34,9 @@
 
 
 
-    <div id="ID_container_sidebar" class="container">
+    <div id="everything" class="container">
             <!-- Sidebar for buttons -->
-            <div class="col-xs-3 class_container_Sidebar">
+            <div class="col-xs-2 sidebar">
                 <!-- GoogleMaps -->
                 <div class="row">
                     <button class="col-xs-12" onclick="back_showHome()">
@@ -66,24 +66,36 @@
 
 
 
-            <div id="ID_container_main" class="class_container_Main col-xs-9">
-                <div id="ID_container_hello">Main Content</div>
+            <div id="main" class="main col-xs-10">
+                <div id="first">Main Content</div>
 
-                <div id="ID_container_timeTable" class="class_container_timetable" style="display:none">
+                <div id="timeTable" class="timeTable" style="display:none">
 
-                    <div class="class_timetable_element row">
-                        <div class="class_timetable_element_image" style="border: solid; float: left"></div>
-                        <div class="class_timetable_element" style="border: solid; float: right"></div>
-                    </div>
-                    <div class="class_timetable_element">Whoo</div>
+                    <!-- timeTable element -->
+                        <div class="tt_element row" id="tt_element">
+                            <div class="tt_e_left col-xs-3">
 
+                            </div>
+                            <div class="tt_e_right col-xs-9">
+                                <div class="tt_e_desc col-xs-12">This is a placholdertext for an important DJ. He is touring through
+                                    europe and has lots of important infos which i will post here. Next thing i know is his name should
+                                    <!--be in the description.
+                                    <p>What is when this text keeps getting bigger and bigger</p>
+                                    <p>another paragraph</p> -->
+                                </div>
+                                <div class="tt_e_low row">
+                                    <div class="tt_e_stage col-xs-8">Main Stage</div>
+                                    <div class="tt_e_date col-xs-4">22:00</div>
+                                </div>
+                            </div>
+
+                        </div>
                 </div>
 
-                <div id="ID_container_faq" class="class_container_faq">
-                FAQ
+                <div id="faq" class="faq">
                 </div>
 
-            </div>
+                </div>
 
     </div>
 
@@ -91,8 +103,8 @@
 
 
     <!-- Footer -->
-    <div id="ID_container_footer" class="container_Footer container">
-        <div class="footer col-xs-12">Footer
+    <div id="footer" class="footer container">
+        <div class="nav col-xs-12">Footer
             <div class="visible-xs-block">only Mobile</div>
             <div class="visible-sm-block">only Tablet</div>
             <div class="visible-md-block">only Desktop</div>

@@ -1,33 +1,34 @@
 
 /* Timetable pressed */
 function showTimeTable() {
-    var id_hello = document.getElementById("ID_container_hello");
-    var id_cont_timetable = document.getElementById("ID_container_timeTable");
+    var hello = document.getElementById("first");
+    var timetable = document.getElementById("timeTable");
 
-    id_hello.style.display = "none";
-    id_cont_timetable.style.display = "block";
+    hello.style.display = "none";
+    timetable.style.display = "block";
 }
 
 /* back button pressed */
 
 function back_showHome() {
-    var id_hello = document.getElementById("ID_container_hello");
-    var id_cont_timetable = document.getElementById("ID_container_timeTable");
+    var hello = document.getElementById("first");
+    var timetable = document.getElementById("timeTable");
 
-    id_hello.style.display = "block";
-    id_cont_timetable.style.display = "none";
+    hello.style.display = "block";
+    timetable.style.display = "none";
 }
 
 
 //html zu laden ist eher kontraproduktiov
 function load_faq(){
-    document.getElementById("ID_container_main").innerHTML='<object type="text/html" data="faq.html"></object>';
+    document.getElementById("main").innerHTML='<object type="text/html" data="faq.html"></object>';
 }
 
 // document ready!
 //mgölichkeit ein skelett zu füllen!
+/*
 $(function() {
-    var $main = $('#ID_container_main');
+    var $main = $('#main');
 
     var $content = $('<div class="content">hallo</div>');
 
@@ -47,3 +48,4 @@ $(function() {
         $main.append('<div class="wusler">'+ test[i].title +' / ' + test[i].author + '</div>')
     }
 });
+*/

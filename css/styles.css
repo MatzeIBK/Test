@@ -1,20 +1,78 @@
+.header {
+    vertical-align: middle;
+    text-align: center;
+    height: 80px;
+    background-color: deeppink;
+    color: white;
+    font-size: 30px;
+    border: solid;
+    margin-bottom: 5px;
+}
+
+.sidebar {
+    height: 500px;
+    background-color:#c0c0c0;
+    color: white;
+    border: solid;
+}
+
+.main {
+    height: 500px;
+    background-color: #c0c0c0;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    border: solid;
+}
+
+.nav {
+    height: 60px;
+    background-color: deeppink;
+    font-size: 20px;
+    color: white;
+    border: solid;
+    margin-top: 5px;
+}
 .button_img {
     width: 100px;
     height: 30px;
     padding: 10px 0px;
 }
 
-.class_timetable_element {
-    height: 70px;
+.tt_e_right {
+    height: 100px;
     border: solid;
-    margin-top: 5px;
-    margin-left: 5px; /* warum rutschts nicht rein? */
 }
 
-.class_timetable_element_image {
-    width: 50px;
-    height: 50px;
-    margin-outside: 5px;
+.tt_e_desc {
+    padding-top: 5px;
+    height: 60px;
+    font-size: 20px;
+    text-align: left;
+ }
+
+.tt_e_stage {
+    height: 40px;
+    border-top: solid;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.tt_e_date {
+    height: 40px;
+    border-top: solid;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.tt_e_left {
+    height: 100px;
+    border: solid;
+}
+
+.tt_e_img {
+    height: 100px;
+    border: solid;
 }
 
 body {
