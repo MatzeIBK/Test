@@ -18,11 +18,14 @@ function back_showHome() {
     id_cont_timetable.style.display = "none";
 }
 
+
+//html zu laden ist eher kontraproduktiov
 function load_faq(){
     document.getElementById("ID_container_main").innerHTML='<object type="text/html" data="faq.html"></object>';
 }
 
 // document ready!
+//mgölichkeit ein skelett zu füllen!
 $(function() {
     var $main = $('#ID_container_main');
 
