@@ -26,26 +26,46 @@ function load_faq(){
 
 // document ready!
 //mgölichkeit ein skelett zu füllen!
-/*
+
 $(function() {
-    var $main = $('#main');
+    var $timetable = $('#tt_element');
+    var $tt_right = $('#tt_right');
 
     var $content = $('<div class="content">hallo</div>');
 
-    $main.prepend($content);
+    $timetable.prepend($content);
 
-    var test = [
-        {
-            title: 'hallo',
-            author: 'wusler'
-        }, {
-            title: 'title',
-            author: 'wusler1'
-        }
-    ];
 
-    for(var i = 0; i < test.length; i++) {
-        $main.append('<div class="wusler">'+ test[i].title +' / ' + test[i].author + '</div>')
+    for(var i = 0; i < 3; i++) {
+        //$main.append('<div class="wusler">'+ test[i].title +' / ' + test[i].author + '</div>')
+
+        $timetable.append('<div class="tt_e_left col-xs-3">'), $timetable.append('<div class="tt_e_right col-xs-9" id="rr_right">');
+        $tt_right.append('<div class="tt_e_desc col-xs-12">'), $tt_right.append('<div class="tt_e_low">');
+
+
     }
 });
-*/
+
+
+/* comment maybe used
+*
+*
+
+ var test = [
+ {
+ title: 'hallo',
+ author: 'wusler'
+ }, {
+ title: 'title',
+ author: 'wusler1'
+ }
+ ];*
+*
+*
+*
+*
+*
+*
+*
+*
+* */
