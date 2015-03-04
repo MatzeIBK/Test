@@ -40,20 +40,29 @@
                 <!-- GoogleMaps -->
                 <div class="row">
                     <div class="col-xs-4" style="padding-right: 0px">
-                        <button class=" col-xs-12 btn_side" onclick="back_showHome()">
-                            <img class="btn_side" src="img/back_button.png" alt="Back"/>
+                        <button class=" col-xs-12 btn_side" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="back_showHome()">
+                            <img class="btn_side" src="img/home.gif" alt="Home"/> NEWS
+                            <span class="caret"></span>
                         </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                        </ul>
                     </div>
 
                     <div class="col-xs-4 btn_side">
                         <button class="col-xs-12 btn_side" onclick="showTimeTable()">
-                            <img class="btn_side" src="img/timeTable.png" alt="Time Table"/>
+                            <img class="btn_side" src="img/timetable.gif" alt="Time Table"/>
+                            <span class="hidden-xs">TIMETABLE</span>
                         </button>
                     </div>
 
                     <div class="col-xs-4" style="padding-left: 0px">
                         <button class="col-xs-12 btn_side" onclick="load_faq()">
-                            <img class="btn_side" src="img/faq.png" alt="FAQ"/>
+                            <img class="btn_side" src="img/help.gif" alt="FAQ"/>
+                            <span class="hidden-xs">FAQ - Help</span>
                         </button>
                     </div>
                 </div>
