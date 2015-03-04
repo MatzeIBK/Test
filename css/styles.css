@@ -20,6 +20,10 @@
     border: solid;
 }
 
+.btn_side {
+    padding: 0px;
+}
+
 .main {
     height: 500px;
     background-color: #c0c0c0;
