@@ -28,31 +28,34 @@
 
 <!-- header -->
 
-    <div class="container">
-        <div class="header col-xs-12">Electric Love</div>
+    <div class="container ">
+        <div class="header col-xs-12 shadow">Electric Love</div>
     </div>
 
 
 
-    <div id="everything" class="container">
+    <div id="everything" class="container ">
             <!-- Sidebar for buttons -->
-            <div class="col-xs-2 sidebar">
+            <div class="container topNav shadow ">
                 <!-- GoogleMaps -->
                 <div class="row">
-                    <button class="col-xs-12 col-sm-8" onclick="back_showHome()">
-                        <img class="col-xs-12 btn_side" src="img/back_button.png" alt="Back"/>
-                    </button>
-                 <!-- TimeTable -->
+                    <div class="col-xs-4" style="padding-right: 0px">
+                        <button class=" col-xs-12 btn_side" onclick="back_showHome()">
+                            <img class="btn_side" src="img/back_button.png" alt="Back"/>
+                        </button>
+                    </div>
 
-                    <button class="col-xs-12 col-sm-4 col- btn_side" onclick="showTimeTable()">
-                        <img class="col-xs-12 btn_side" src="img/timeTable.png" alt="Time Table"/>
-                    </button>
+                    <div class="col-xs-4 btn_side">
+                        <button class="col-xs-12 btn_side" onclick="showTimeTable()">
+                            <img class="btn_side" src="img/timeTable.png" alt="Time Table"/>
+                        </button>
+                    </div>
 
-                <!-- FAQ -->
-
-                    <button class="col-xs-12 col-sm-0 btn_side" onclick="load_faq()">
-                        <img class="col-xs-12 btn_side" src="img/faq.png" alt="FAQ"/>
-                    </button>
+                    <div class="col-xs-4" style="padding-left: 0px">
+                        <button class="col-xs-12 btn_side" onclick="load_faq()">
+                            <img class="btn_side" src="img/faq.png" alt="FAQ"/>
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -66,7 +69,7 @@
 
 
 
-            <div id="main" class="main col-xs-10">
+            <div id="main" class="container-fluid main shadow">
                 <div id="first">Main Content</div>
 
                 <div id="timeTable" class="timeTable" style="display:none">
@@ -104,8 +107,8 @@
 
 
     <!-- Footer -->
-    <div id="footer" class="footer container">
-        <div class="nav col-xs-12">Footer
+    <div id="footer" class=" container">
+        <div class="footer col-xs-12 shadow">Footer
             <div class="visible-xs-block">only Mobile</div>
             <div class="visible-sm-block">only Tablet</div>
             <div class="visible-md-block">only Desktop</div>
