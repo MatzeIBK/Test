@@ -35,36 +35,49 @@
 
 
     <div id="everything" class="container ">
-            <!-- Sidebar for buttons -->
+
+            <!-- Top Navigation with 4 Buttons and 2 Dropdown Menues -->
             <div class="container topNav shadow ">
                 <!-- GoogleMaps -->
                 <div class="row">
-                    <div class="col-xs-4" style="padding-right: 0px">
-                        <button class=" col-xs-12 btn_side" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="back_showhome()">
-                            <img class="btn_side" src="img/home.gif" alt="home"/> news
+                    <div class="col-xs-3" style="padding-right: 0px">
+                        <button class=" col-xs-12 btn_side" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="btn_side" src="img/placeholder.png" alt="home"/><span class="hidden-xs" style="margin-left: 5px">Timetable</span>
                             <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Right Now!</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Thursday</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Friday</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Saturday</a></li>
                         </ul>
 
                     </div>
 
-                    <div class="col-xs-4 btn_side">
+                    <div class="col-xs-3 btn_side">
                         <button class="col-xs-12 btn_side" onclick="showTimeTable()">
-                            <img class="btn_side" src="img/timetable.gif" alt="Time Table"/>
-                            <span class="hidden-xs">TIMETABLE</span>
+                            <img class="btn_side" src="img/placeholder.png" alt="Time Table"/>
+                            <span class="hidden-xs">Map</span>
                         </button>
                     </div>
 
-                    <div class="col-xs-4" style="padding-left: 0px">
-                        <button class="col-xs-12 btn_side" onclick="load_faq()">
-                            <img class="btn_side" src="img/help.gif" alt="FAQ"/>
-                            <span class="hidden-xs">FAQ - Help</span>
+                    <div class="col-xs-3 btn_side">
+                        <button class="col-xs-12 btn_side" onclick="showTimeTable()">
+                            <img class="btn_side" src="img/placeholder.png" alt="Time Table"/>
+                            <span class="hidden-xs">News</span>
                         </button>
+                    </div>
+
+
+                    <div class="col-xs-3" style="padding-left: 0px">
+                        <button class=" col-xs-12 btn_side" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="btn_side" src="img/placeholder.png" alt="home"/><span class="hidden-xs" style="margin-left: 5px">FAQ</span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Drinks</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Food</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -117,13 +130,11 @@
 
 
     <!-- Footer -->
-    <div id="footer" class=" container">
-        <div class="footer col-xs-12 shadow">Footer
-            <div class="visible-xs-block">only Mobile</div>
-            <div class="visible-sm-block">only Tablet</div>
-            <div class="visible-md-block">only Desktop</div>
-            <div class="visible-lg-block">only Large Desktop</div>
-        </div>
+    <div id="footer" class="footer container shadow">
+            <span class="visible-xs-block">only Mobile</span>
+            <span class="visible-sm-block">only Tablet</span>
+            <span class="visible-md-block">only Desktop</span>
+            <span class="visible-lg-block">only Large Desktop</span>
     </div>
 
 
