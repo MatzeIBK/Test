@@ -32,7 +32,7 @@
 }
 
 .main {
-    height: 350px;
+    height: auto;
     background-color: #c0c0c0;
     text-align: center;
     color: white;
@@ -46,7 +46,6 @@
     background-color: darkslateblue;
     font-size: 20px;
     color: white;
-    margin-bottom: 10px;
 }
 .button_img {
     width: 100px;
