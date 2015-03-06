@@ -36,7 +36,7 @@ $(function() {
     $timetable.prepend($content);
 
 
-    for(var i = 0; i < 3; i++) {
+    for(var i = 0; i < 10; i++) {
         //$main.append('<div class="wusler">'+ test[i].title +' / ' + test[i].author + '</div>')
 
         $timetable.append('<div class="tt_e_left col-xs-3">'), $timetable.append('<div class="tt_e_right col-xs-9" id="rr_right">');
