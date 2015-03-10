@@ -30,14 +30,26 @@
 
 }
 
+
 .main {
-    height: auto;
+    position: relative;
+    height: 400px;
+    width: 500px;
     background-color: darkslateblue;
     text-align: center;
     color: white;
     font-size: 50px;
     border-bottom: solid;
     border-color: lightgrey;
+    overflow: hidden;
+}
+
+#inner {
+    width: 100%;
+    overflow: auto;
+    height: 100%;
+    padding-right: 15px;
+
 }
 
 .footer {
