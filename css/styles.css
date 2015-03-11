@@ -1,11 +1,12 @@
 .header {
     text-align: center;
     height: 45px;
-    background-color: darkslateblue;
+    background-color: #424242;
     color: white;
     font-size: 30px;
     margin-bottom: 10px;
     margin-top: 5px;
+    opacity: 0.7;
 }
 
 .shadow1 {
@@ -30,25 +31,26 @@
 
 }
 
-
 .main {
     position: relative;
     height: 400px;
-    width: 500px;
-    background-color: darkslateblue;
     text-align: center;
     color: white;
     font-size: 50px;
     border-bottom: solid;
     border-color: lightgrey;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
-#inner {
-    width: 100%;
-    overflow: auto;
-    height: 100%;
-    padding-right: 15px;
+.start {
+    height: 400px;
+    background-color: #424242;
+    opacity: 0.7;
+    
+}
+
+#first{
+    overflow:hidden;
 
 }
 
@@ -56,9 +58,10 @@
     height: 40px;
     text-align: center;
     horiz-align: center;
-    background-color: darkslateblue;
+    background-color: #424242;
     font-size: 20px;
     color: white;
+    opacity: 0.7;
 }
 .button_img {
     width: 100px;
@@ -68,7 +71,10 @@
 
 .tt_e_right {
     height: 100px;
-    border: 1px;
+    border: solid;
+    background-color: #424242;
+    opacity: 0.5;
+
 }
 
 .tt_e_desc {
@@ -103,7 +109,7 @@
 }
 
 body {
-    background-color: darkgrey;
+    background: url("../img/background.png") ;
     padding: 0px;
 }
 

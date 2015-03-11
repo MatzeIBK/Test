@@ -2,7 +2,7 @@
 /* Timetable pressed */
 function showTimeTable() {
     var hello = document.getElementById("first");
-    var timetable = document.getElementById("timeTable");
+    var timetable = document.getElementById("tt_element");
 
     hello.style.display = "none";
     timetable.style.display = "block";
@@ -24,12 +24,25 @@ function load_faq(){
     document.getElementById("main").innerHTML='<object type="text/html" data="faq.html"></object>';
 }
 
+// get the width of the textarea minus scrollbar
+
+
+// width of our wrapper equals width of the inner part of the textarea
+
+
+
+
+
+
+
+
+
+
 // document ready!
 //mgölichkeit ein skelett zu füllen!
 
 $(function() {
     var $timetable = $('#tt_element');
-    var $tt_right = $('#tt_right');
 
     var $content = $('<div class="content">hallo</div>');
 
@@ -40,7 +53,7 @@ $(function() {
         //$main.append('<div class="wusler">'+ test[i].title +' / ' + test[i].author + '</div>')
 
         $timetable.append('<div class="tt_e_left col-xs-3">'), $timetable.append('<div class="tt_e_right col-xs-9" id="rr_right">');
-        $tt_right.append('<div class="tt_e_desc col-xs-12">'), $tt_right.append('<div class="tt_e_low">');
+
 
 
     }
