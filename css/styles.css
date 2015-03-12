@@ -1,12 +1,11 @@
 .header {
     text-align: center;
     height: 45px;
-    background-color: #424242;
+    background-color: rgba(118, 117, 120, 0.70);
     color: white;
     font-size: 30px;
     margin-bottom: 10px;
     margin-top: 5px;
-    opacity: 0.7;
 }
 
 .shadow1 {
@@ -33,19 +32,18 @@
 
 .main {
     position: relative;
-    height: 400px;
+    height: 450px;
     text-align: center;
     color: white;
     font-size: 50px;
-    border-bottom: solid;
-    border-color: lightgrey;
     overflow-y: scroll;
+    padding: 10px;
 }
 
 .start {
-    height: 400px;
-    background-color: #424242;
-    opacity: 0.7;
+    height: 450px;
+    background-color: rgba(118, 117, 120, 0.70);
+
     
 }
 
@@ -58,11 +56,11 @@
     height: 40px;
     text-align: center;
     horiz-align: center;
-    background-color: #424242;
+    background-color: rgba(118, 117, 120, 0.70);
     font-size: 20px;
     color: white;
-    opacity: 0.7;
 }
+
 .button_img {
     width: 100px;
     height: 30px;
@@ -70,11 +68,11 @@
 }
 
 .tt_e_right {
-    height: 100px;
     border: solid;
-    background-color: #424242;
-    opacity: 0.5;
-
+    padding: 0px;
+    margin-bottom: 10px;
+    height: 100px;
+    background-color: rgba(118, 117, 120, 0.70);
 }
 
 .tt_e_desc {
@@ -82,6 +80,7 @@
     height: 60px;
     font-size: 20px;
     text-align: left;
+
  }
 
 .tt_e_stage {
@@ -99,14 +98,23 @@
 }
 
 .tt_e_left {
-    height: 100px;
     border: solid;
+    padding: 0px;
+    margin-bottom: 10px;
+    height: 100px;
+    background-color: rgba(118, 117, 120, 0.70);
 }
 
 .tt_e_img {
     height: 100px;
-    border-right: solid;
+
 }
+
+.dropdown-menu {
+    width: 100px !important;
+    height: auto !important;
+}
+
 
 body {
     background: url("../img/background.png") ;
