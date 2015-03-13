@@ -23,6 +23,10 @@
     margin-bottom: 10px;
 }
 
+.btn_img {
+    padding: 5px;
+}
+
 .btn_nav {
     padding: 0px;
     font-size: 25px;
