@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 
     <!-- Bootstrap init -->
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="phonegap.js"></script>
     <script src="js/main.js"></script>
-
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCmouXxBlDi9G_UQigvgCxilD8LjKWMfBc&sensor=false">
+    </script>
 
     <!-- Styles init -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -49,7 +50,7 @@
 
         <div id="everything" class="container ">
 
-                <!-- Top Navigation with 4 Buttons and 2 Dropdown Menues -->
+            <!-- Top Navigation with 4 Buttons-->
                 <div class="container topNav shadow ">
                     <!-- TimeTabel -->
                     <div class="row" style="margin: 0px">
@@ -69,7 +70,7 @@
                         <!-- Maps -->
                         <div class="col-xs-3 btn_nav">
                             <button class="col-xs-12 btn_nav">
-                                <img class="btn_img" src="img/map.gif" alt="Map"/>
+                                <img class="btn_img" onclick="googleLoad()" src="img/map.gif" alt="Map"/>
                                 <span class="hidden-xs">Map</span>
                             </button>
                         </div>
@@ -84,13 +85,13 @@
                                 <li class="menu_item" role="presentation"><a role="menuitem" tabindex="-1" href="https://www.facebook.com/electriclovefestival">
                                     <span><img class="menu_icon" src="img/facebook.gif"> </span>Facebook</a></li>
                                 <li class="menu_item" role="presentation"><a role="menuitem" tabindex="-2" href="https://www.twitter.com/electricloveaut">
-                                    <span><img class="menu_icon" src="img/twitter.gif">Twitter</a></li>
+                                    <span><img class="menu_icon" src="img/twitter.gif"></span>Twitter</a></li>
                                 <li class="menu_item" role="presentation"><a role="menuitem" tabindex="-3" href="https://www.youtube.com/channel/UC1yhsZ5dZUEJHVkr5opPT-g">
-                                    <span><img class="menu_icon" src="img/youtube.gif">Youtube</a></li>
+                                    <span><img class="menu_icon" src="img/youtube.gif"></span>Youtube</a></li>
                                 <li class="menu_item" role="presentation"><a role="menuitem" tabindex="-4" href="https://instagram.com/electricloveaut">
-                                    <span><img class="menu_icon" src="img/instagram.gif">Instagram</a></li>
+                                    <span><img class="menu_icon" src="img/instagram.gif"></span>Instagram</a></li>
                                 <li class="menu_item" role="presentation"><a role="menuitem" tabindex="-5" href="http://www.electriclove.at/">
-                                    <span><img class="menu_icon" src="img/house.gif">Home</a></li>
+                                    <span><img class="menu_icon" src="img/house.gif"></span>Home</a></li>
                             </ul>
                         </div>
 
@@ -116,9 +117,12 @@
                 w
                 -->
 
-                <div id="main" class="container-fluid main shadow">
+                <div id="main" class="container-fluid main">
+                    <div id="contentholder" style="margin: 0px"></div>
                     <div id="first" class="start row" style="margin: 0px">
                     </div>
+
+                    <div id="second map_canvas" style="width:100%; height:100%; display: none;"></div>
                             <!-- timeTable element -->
                             <div class="row" style="display: none; margin: 0px"  id="tt_element">
                                 <!--
