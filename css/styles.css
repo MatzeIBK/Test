@@ -108,19 +108,8 @@
 
 }
 
-.dropdown-menu {
-    width: 100px !important;
-    height: auto !important;
-}
-
-
 body {
-    background: url("../img/background.png") ;
+    background: linear-gradient( rgba(33,42,82,0.7), rgba(36,87,162,0.7)),  url("../img/background.png") ;
     padding: 0px;
 }
 
-@media only screen and (max-width: 500px) {
-    body {
-        font-size: 9px;
-    }
-}
