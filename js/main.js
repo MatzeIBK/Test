@@ -36,7 +36,7 @@ function googleLoad(){
     var map;
 
     var mapOptions = {
-        zoom: 8,
+        zoom: 14,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     var map = new google.maps.Map(document.getElementById("second map_canvas"),
@@ -48,10 +48,10 @@ function googleLoad(){
             var pos = new google.maps.LatLng(position.coords.latitude,
                 position.coords.longitude);
 
-            var infowindow = new google.maps.InfoWindow({
+            var infowindow = new google.maps.Marker({
                 map: map,
                 position: pos,
-                content: 'Location found using HTML5.'
+
             });
 
             map.setCenter(pos);
