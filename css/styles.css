@@ -27,6 +27,14 @@
     padding: 5px;
 }
 
+.menu_item {
+    font-size: 19px;
+}
+
+.menu_icon {
+    margin-right: 5px;
+}
+
 .btn_nav {
     padding: 0px;
     font-size: 25px;
