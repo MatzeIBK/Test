@@ -50,14 +50,27 @@
 }
 
 .main {
-    position: relative;
-    height: 450px;
     text-align: center;
-    color: white;
-    font-size: 50px;
-    overflow-y: scroll;
-    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+    border: solid;
 }
+
+.icon {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+}
+
+.icon_name {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
 
 .start {
     height: 450px;
@@ -129,8 +142,6 @@
 
 body {
     background: linear-gradient( rgba(33,42,82,0.7), rgba(36,87,162,0.7)),  url("../img/background.png") ;
-    padding: 0px;
-    height: 100%;
-    margin: 0;
+
 }
 
