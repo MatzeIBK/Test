@@ -24,168 +24,25 @@
 </head>
 
 <body>
+    <div id="everything" class="container ">
+        <div id="main" class="element">
+            <div class="col-xs-12 icon_name">
+                <img src="img/logo_name.gif" style="width: 250px; height: 53px"/>
+            </div>
 
-    <!-- header --
-        <div class="container header ">
-            <div class="row" style="margin: 0px">
-                <div class="visible-sm-block visible-md-block visible-lg-block col-xs-2 container">
-                    <a href="index.html"><img src="img/logo.gif" class="img-responsive" height="60" width="150"/></a>
-
-
-                </div>
-                <div class="visible-sm-block visible-md-block visible-lg-block col-xs-10 container">Electric Love Festival 2015</div>
-                <div class="visible-xs-block col-xs-2 container">
-                    <a href="index.html"><img src="img/logo_min.gif" class="img-responsive" height="50" width="50"/></a>
-                </div>
-                <div class="visible-xs-block col-xs-10 container">ELF 15</div>
-
-                <div class="col-xs-10 container"></div>
-
+            <div class="row" style="margin-bottom: 10px">
+                <div class="col-xs-4" style="padding: 0px"><a href="sites/timetable.html"><img class="item_main" src="img/max/timetable.png"></a></div>
+                <div class="col-xs-4" style="padding: 0px"><a href="#"><img class="item_main" src="img/logo_max.gif"></a></div>
+                <div class="col-xs-4" style="padding: 0px"><a href="#"><img class="item_main" src="img/max/map.png"></a></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4" style="padding: 0px"><a href="#"><img class="item_main" src="img/max/news.png"></a></div>
+                <div class="col-xs-4" style="padding: 0px"><a href="#"><img class="item_main" src="img/max/info.png"></a></div>
+                <div class="col-xs-4" style="padding: 0px"><a href="#"><img class="item_main" src="img/max/food.png"></a></div>
             </div>
 
         </div>
-
-        -->
-
-        <div id="everything" class="container ">
-
-            <!-- Top Navigation with 4 Buttons-
-                <div class="container topNav shadow ">
-                    <!-- TimeTabel --
-                    <div class="row" style="margin: 0px">
-                        <div class="col-xs-3 btn_nav">
-                            <button class=" col-xs-12 btn_nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="btn_img" src="img/timetable.gif" alt="Timetable"/><span class="hidden-xs">Timetable</span>
-                                <span class="caret"></span>
-                            </button>
-                            <ul id="timetable" class="dropdown-menu" role="menu" aria-labelledby="timetable">
-                                <li class="menu_item" id="rightnow" role="presentation"><a role="menuitem" tabindex="-1" href="#" onclick="showTimeTable(); return false;">Right Now!</a></li>
-                                <li class="menu_item" id="thursday" role="presentation"><a role="menuitem" tabindex="-2" href="#">Thursday</a></li>
-                                <li class="menu_item" id="friday" role="presentation"><a role="menuitem" tabindex="-2" href="#">Friday</a></li>
-                                <li class="menu_item" id="saturday" role="presentation"><a role="menuitem" tabindex="-2" href="#">Saturday</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Maps --
-                        <div class="col-xs-3 btn_nav">
-                            <button class="col-xs-12 btn_nav" onclick="googleLoad()">
-                                <img class="btn_img" src="img/map.gif" alt="Map"/>
-                                <span class="hidden-xs">Map</span>
-                            </button>
-                        </div>
-
-                        <!-- News --
-                        <div class="col-xs-3 btn_nav">
-                            <button class=" col-xs-12 btn_nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="btn_img" src="img/mail.gif" alt="FAQ"/><span class="hidden-xs">FAQ</span>
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="new_menu">
-                                <li class="menu_item" role="presentation"><a role="menuitem" tabindex="-1" href="https://www.facebook.com/electriclovefestival">
-                                    <span><img class="menu_icon" src="img/facebook.gif"> </span>Facebook</a></li>
-                                <li class="menu_item" role="presentation"><a role="menuitem" tabindex="-2" href="https://www.twitter.com/electricloveaut">
-                                    <span><img class="menu_icon" src="img/twitter.gif"></span>Twitter</a></li>
-                                <li class="menu_item" role="presentation"><a role="menuitem" tabindex="-3" href="https://www.youtube.com/channel/UC1yhsZ5dZUEJHVkr5opPT-g">
-                                    <span><img class="menu_icon" src="img/youtube.gif"></span>Youtube</a></li>
-                                <li class="menu_item" role="presentation"><a role="menuitem" tabindex="-4" href="https://instagram.com/electricloveaut">
-                                    <span><img class="menu_icon" src="img/instagram.gif"></span>Instagram</a></li>
-                                <li class="menu_item" role="presentation"><a role="menuitem" tabindex="-5" href="http://www.electriclove.at/">
-                                    <span><img class="menu_icon" src="img/house.gif"></span>Home</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Info --
-                        <div class="col-xs-3 btn_nav">
-                            <button class=" col-xs-12 btn_nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="btn_img" src="img/help.gif" alt="FAQ"/><span class="hidden-xs">FAQ</span>
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="faq_menu">
-                                <li class="menu_item" role="presentation"><a role="menuitem" tabindex="-1" href="#">Drinks</a></li>
-                                <li class="menu_item" role="presentation"><a role="menuitem" tabindex="-2" href="#">Food</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Main Area
-
-                den bereich in da main area verändern mit hilfe von java script
-                time table button wird gedrück und der main bereich verändert sic
-                w
-                -->
-
-                <div id="main" class="element">
-                    <div class="col-xs-12 icon_name">
-                        <img src="img/logo_name.gif" style="width: 250px; height: 53px"/>
-                    </div>
-                    <div class="row" style="margin-bottom: 10px">
-                        <div class="col-xs-4" style="padding: 0px"><a href="#"><img class="item_main" src="img/placeholder_icon.png"></a></div>
-                        <div class="col-xs-4" style="padding: 0px"><a href="#"><img class="item_main" src="img/logo_max.gif"></a></div>
-                        <div class="col-xs-4" style="padding: 0px"><a href="#"><img class="item_main" src="img/placeholder_icon.png"></a></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-4" style="padding: 0px"><a href="#"><img class="item_main" src="img/placeholder_icon.png"></a></div>
-                        <div class="col-xs-4" style="padding: 0px"><a href="#"><img class="item_main" src="img/placeholder_icon.png"></a></div>
-                        <div class="col-xs-4" style="padding: 0px"><a href="#"><img class="item_main" src="img/placeholder_icon.png"></a></div>
-                    </div>
-
-                                <!--
-                                <div class="tt_e_left col-xs-3">
-
-                                </div>
-                                <div class="tt_e_right col-xs-9">
-                                    <div class="tt_e_desc col-xs-12">
-                                    </div>
-                                    <div class="tt_e_low row" style="margin: 0px">
-                                        <div class="tt_e_stage col-xs-8">Main Stage</div>
-                                        <div class="tt_e_date col-xs-4">22:00</div>
-                                    </div>
-                                </div>
-                            -->
-
-                            </div>
-                    <!--
-                    <div id="faq" class="faq">
-                    </div>
-                    -->
-                </div>
-
-
-        </div>
-
-
-
-
-        <!-- Footer --
-        <div id="footer" class="footer container shadow">
-                <span class="visible-xs-block">only Mobile</span>
-                <span class="visible-sm-block">only Tablet</span>
-                <span class="visible-md-block">only Desktop</span>
-                <span class="visible-lg-block">only Large Desktop</span>
-        </div>
-
-
-    <!--
-    <!-- Liste --
-        <div class="container-fluid">
-            <h1>Hello World!</h1>
-            <p>resize</p>
-            <ol>
-                <li>
-                    <div class ="col-sm-4" style="background-color: #ffff00">.col-sm-4</div>
-                </li>
-                <li>
-                    <div class ="col-sm-4" style="background-color: aqua">.col-sm-8</div>
-                </li>
-
-            </ol>
-
-        </div>
-    -->
-
-	
+    </div>
 </body>
 
 </html>

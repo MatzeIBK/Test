@@ -21,7 +21,6 @@
     width: 75px;
 }
 
-
 .main {
     text-align: center;
     margin-left: auto;
@@ -33,14 +32,11 @@
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-
-
 }
 
 .icon_name {
     margin-left: auto;
     margin-right: auto;
-
     margin-bottom: 10px;
 }
 body {
