@@ -13,7 +13,6 @@
 .element {
     display: inline-block;
     vertical-align: middle;  /* vertical alignment of the inline element */
-    font: 16px/1 Arial sans-serif;        /* <-- reset the font property */
 }
 
 .item_main {
@@ -39,6 +38,36 @@
     margin-right: auto;
     margin-bottom: 10px;
 }
+
+/* Styles for countdown */
+
+.clocknav {
+    background-color: rgba(110, 110, 110, 0.7);
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.clocknav {
+    padding: 5px;
+}
+
+.clocktext {
+    padding-top: 15px;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(201, 201, 201, 0.7);
+}
+
+.clockbox {
+    font-size: 25px;
+    padding: 25px;
+}
+
+
+/* Styles for timetable*/
+
+
 body {
     background: linear-gradient( rgba(33,42,82,0.7), rgba(36,87,162,0.7)),  url("../img/background.png") ;
 
