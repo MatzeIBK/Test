@@ -16,6 +16,11 @@
     font: 16px/1 Arial sans-serif;        /* <-- reset the font property */
 }
 
+.item_main {
+    height: 75px;
+    width: 75px;
+}
+
 
 .main {
     text-align: center;
@@ -28,6 +33,7 @@
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+
 
 }
 
