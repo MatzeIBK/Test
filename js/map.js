@@ -1,9 +1,11 @@
 var map;
 
 function initialize() {
+
+    var myLatlng = (47.822, 13.175);
     var mapOptions = {
         zoom: 14,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.HYBRID
     };
     map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
