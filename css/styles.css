@@ -65,11 +65,7 @@
 }
 
 
-/* Styles for map*/
-.map_wrappers {
-    height: auto;
-    width: auto;
-}
+
 
 #map-canvas {
     height: 100%;
