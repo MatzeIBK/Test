@@ -65,7 +65,19 @@
 }
 
 
-/* Styles for timetable*/
+/* Styles for map*/
+.map_wrappers {
+    height: auto;
+    width: auto;
+}
+
+#map-canvas {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
 
 
 body {
