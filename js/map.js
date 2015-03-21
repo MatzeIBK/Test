@@ -1,7 +1,6 @@
-var map;
-
 function initialize() {
 
+    var map;
     var mapOptions = {
         zoom: 14,
         mapTypeId: google.maps.MapTypeId.HYBRID
@@ -49,3 +48,5 @@ function handleNoGeolocation(errorFlag) {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+$('maps').click(initialize());
