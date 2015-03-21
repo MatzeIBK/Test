@@ -1,14 +1,20 @@
-function initialize() {
+function googleLoad(){
+
+    var timetable = document.getElementById("first");
+    var temp = document.getElementById("second map_canvas");
+    timetable.style.display = "none";
+    temp.style.display = "block";
 
     var map;
+
     var mapOptions = {
         zoom: 14,
-        mapTypeId: google.maps.MapTypeId.HYBRID
+        mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    map = new google.maps.Map(document.getElementById('map-canvas'),
+    var map = new google.maps.Map(document.getElementById("second map_canvas"),
         mapOptions);
 
-    // Try HTML5 geolocation
+// Try HTML5 geolocation
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
             var pos = new google.maps.LatLng(position.coords.latitude,
@@ -17,7 +23,7 @@ function initialize() {
             var infowindow = new google.maps.Marker({
                 map: map,
                 position: pos,
-                content: 'Location found using HTML5.'
+
             });
 
             map.setCenter(pos);
@@ -28,7 +34,7 @@ function initialize() {
         // Browser doesn't support Geolocation
         handleNoGeolocation(false);
     }
-}
+};
 
 function handleNoGeolocation(errorFlag) {
     if (errorFlag) {
@@ -47,6 +53,4 @@ function handleNoGeolocation(errorFlag) {
     map.setCenter(options.position);
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
-
-$('maps').click(initialize());
+google.maps.event.addDomListener(window, 'load', googleLoad());

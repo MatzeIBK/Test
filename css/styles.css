@@ -71,12 +71,10 @@
     margin-bottom: 50px;
 }
 
-#map-canvas {
-    height: 100%;
-    width: 100%;
-    padding: 0px;
-    display: block;
+.first {
+
 }
+
 
 /* styles for info.html*/
 .content-info {
