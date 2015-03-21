@@ -54,3 +54,5 @@ function handleNoGeolocation(errorFlag) {
 }
 
 google.maps.event.addDomListener(window, 'load', googleLoad());
+
+$('map').click(googleLoad());
