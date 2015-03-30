@@ -1,0 +1,17 @@
+.acc-demo-3 {
+    height:40px;
+    padding:10px;
+    -webkit-transition:0.4s height, 0.4s padding;
+    -moz-transition:0.4s height, 0.4s padding;
+    -ms-transition:0.4s height, 0.4s padding;
+    transition:0.4s height, 0.4s padding;
+}
+.acc-demo-3.hidden {
+    height:0px;
+    padding:0px 10px;
+    visibility:hidden;
+    -webkit-transition:0.7s height, 0.7s padding, 0s visibility 0.7s;
+    -moz-transition:0.7s height, 0.7s padding, 0s visibility 0.7s;
+    -ms-transition:0.7s height, 0.7s padding, 0s visibility 0.7s;
+    transition:0.7s height, 0.7s padding, 0s visibility 0.7s;
+}
