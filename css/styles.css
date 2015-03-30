@@ -86,6 +86,30 @@
     margin-bottom: 10px;
 }
 
+/* styles for news.html */
+
+
+#social_btn {
+    width: 100%;
+    height: 25px;
+    background-color: rgba(201, 201, 201, 0.7);
+}
+
+#grow input:checked {color:red;}
+
+#social_btn:hover{color:#000000;}
+
+#grow {
+    -moz-transition: height .5s;
+    -ms-transition: height .5s;
+    -o-transition: height .5s;
+    -webkit-transition: height .5s;
+    transition: height .5s;
+    height: 0;
+    overflow: hidden;
+}
+
+
 
 
 
