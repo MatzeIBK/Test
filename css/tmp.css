@@ -1,10 +1,11 @@
 .accordion {
-    width:830px;
+    width:auto;
     overflow:hidden;
     margin:10px auto;
     color:#474747;
     background:#414141;
     padding:10px;
+
 }
 
 .accordion section{
@@ -29,11 +30,6 @@
     color:#000;
     font-weight:bold;
 }
-.accordion section:nth-child(1):after{ content:'1'; }
-.accordion section:nth-child(2):after{ content:'2'; }
-.accordion section:nth-child(3):after{ content:'3'; }
-.accordion section:nth-child(4):after{ content:'4'; }
-.accordion section:nth-child(5):after{ content:'5'; }
 
 .accordion section:target {
     background:#FFF;
@@ -72,20 +68,20 @@
 
 /*Set height of the slide*/
 .vertical :target{
-    height:250px;
-    width:97%;
+    height: 200px;
+    width:100%;
 }
 
 .vertical section h2 {
     position:relative;
-    left:0;
+    margin-left: auto;
+    margin-right: auto;
     top:-15px;
 }
-/*Set position of the number on the slide*/
-.vertical section:after{
-    top:-60px;
-    left:810px;
-}
-.vertical section:target:after{
-    left:-9999px;
+
+.img_accordion {
+    height: 35px;
+    width: 35px;
+    margin-right: 5px;
+
 }
