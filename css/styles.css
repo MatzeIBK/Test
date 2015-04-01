@@ -115,10 +115,30 @@
     background-color: rgba(110, 110, 110, 0.7);
 }
 
-hr {
+.collapse{
+    font-size: 24px;
+    display:block;
+    visibility: visible;
+    background-color: rgba(110, 110, 110, 0.7);
+
+}
+
+.collapse + input {
+    display:none;
+}
+.collapse + input + * {
+    display:none;
+}
+.collapse + input:checked + * {
+    display:block;
+    height:44px;
+
+}
+.test{
     background-color: #ffffff;
+    height:auto;
     margin-bottom: 10px;
-    margin-top: 20px;
+    margin-top: -5px;
 }
 
 body {
@@ -127,4 +147,5 @@ body {
     padding: 0px;
     background: linear-gradient( rgba(33,42,82,0.7), rgba(36,87,162,0.7)),  url("../img/background.png") center ;
 }
+
 

@@ -13,7 +13,6 @@
     <!-- Styles init -->
     <link rel="stylesheet" href="../../css/bootstrap.min.css" type="text/css"/>
     <link rel="stylesheet" href="../../css/bootstrap-theme.min.css" type="text/css"/>
-    <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css"/>
     <link rel="stylesheet" href="../../css/normalize.css" type="text/css"/>
     <link rel="stylesheet" href="../../css/styles.css" type="text/css"/>
 
@@ -26,13 +25,22 @@
 
 <div id="everything" class="content-info" style="padding: 5px; text-align: center">
 
-    <div class="col-xs-12 header_back" onclick="history.go(-1);return true;">
-        <img src="../../img/max/arrow_left.gif" style="height: 30px; width: 30px">
+    <div class="row" style="padding: 0px; margin: 0px">
+        <div class="col-xs-4 header_back" onclick="history.go(-1);return true;">
+            <img src="../../img/max/arrow_left_back.gif" style="height: 30px; width: 86px">
+        </div>
+        <div class="col-xs-4 header_back header_title" style="text-align: center">TICKETS</div>
+        <div class="col-xs-4 header_back"></div>
     </div>
-    <div class="col-xs-12 header_title">
-        TICKETS - QUESTIONS and ANSWERS
 
-    </div>
+
+    <label class="collapse" for="1">Collapse 2</label>
+    <input id="1" type="checkbox">
+    <div class="test">Content 1</div>
+
+    <label class="collapse" for="2">Collapse 2</label>
+    <input id="2" type="checkbox">
+    <div class="test">Content 2</div>
 
 </div>
 
