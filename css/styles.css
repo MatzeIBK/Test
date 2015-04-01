@@ -113,7 +113,6 @@
     width: auto;
     text-align: left;
     background-color: rgba(110, 110, 110, 0.7);
-
 }
 
 hr {
@@ -121,9 +120,6 @@ hr {
     margin-bottom: 10px;
     margin-top: 20px;
 }
-
-
-
 
 body {
     height: 100%;
