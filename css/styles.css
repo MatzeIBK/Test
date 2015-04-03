@@ -130,6 +130,8 @@
     margin-bottom: 10px;
 }
 
+.collapse + input + img {
+}
 
 .collapse + input {
     display:none;
@@ -151,6 +153,14 @@
     padding: 5px;
     text-align: justify;
     font-size: 18px;
+}
+
+.plus_img{
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 7px
 }
 
 hr {
