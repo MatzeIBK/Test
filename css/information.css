@@ -69,7 +69,7 @@
 .vertical :target{
     height: 170px;
     width:100%;
-    overflow-y: visible;
+    overflow-y: scroll;
 }
 
 .vertical section h2 {
