@@ -20,9 +20,9 @@
 }
 
 .spining:hover {
-    -webkit-animation:spin 1s linear ;
-    -moz-animation:spin 1s linear ;
-    animation:spin 1s linear ;
+    -webkit-animation:spin 0.5s linear ;
+    -moz-animation:spin 0.5s linear ;
+    animation:spin 0.5s linear ;
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotateY(360deg); } }
