@@ -78,6 +78,20 @@
     top:-15px;
 }
 
+.outer {
+    width: auto;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.outer li {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    margin-right: 10px;
+    white-space: normal;
+}
+
 .img_accordion {
     height: 35px;
     width: 35px;
