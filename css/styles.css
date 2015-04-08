@@ -19,6 +19,16 @@
     width: 75px;
 }
 
+.spining:hover {
+    -webkit-animation:spin 1s linear ;
+    -moz-animation:spin 1s linear ;
+    animation:spin 1s linear ;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotateY(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotateY(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); } }
+
 .main {
     text-align: center;
     margin-left: auto;
@@ -95,6 +105,10 @@
     margin-bottom: 5px;
     height: 40px;
     padding: 5px;
+}
+
+.header_back:hover {
+    background-color: rgba(42, 42, 42, 0.70);
 }
 
 .header_title {
