@@ -22,7 +22,7 @@
     width: 75px;
 }
 
-.spining:hover {
+.spinning:hover {
     -webkit-animation:spin 0.5s linear ;
     -moz-animation:spin 0.5s linear ;
     animation:spin 0.5s linear ;
