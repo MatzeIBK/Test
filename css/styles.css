@@ -1,3 +1,6 @@
+/* Farbverlauf von: #212a52 Zu #2457a2
+            rgba(33, 42, 82, 1)  zu rgba(36, 87, 162, 1)*/
+
 .container {
     height: 500px;
     text-align: center;,
@@ -47,6 +50,7 @@
     margin-right: auto;
     margin-bottom: 10px;
 }
+
 
 /* Styles for countdown.html */
 
