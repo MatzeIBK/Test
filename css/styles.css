@@ -98,6 +98,11 @@
     background-color: rgba(201, 201, 201, 0.7);
 }
 
+.logo_height {
+    height: 90px;
+}
+
+
 .header_back {
     background-color: rgba(110, 110, 110, 0.7);
     font-size: 18px;
