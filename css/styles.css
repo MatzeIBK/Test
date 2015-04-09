@@ -39,6 +39,12 @@
     border: solid;
 }
 
+#text {
+    font-size: 25px;
+    color: #ffffff;
+    font-style: italic;
+}
+
 .icon {
     margin-right: auto;
     margin-left: auto;
