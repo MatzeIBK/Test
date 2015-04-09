@@ -1,5 +1,11 @@
-ToDo:
+﻿ToDo:
 
     - Mit Hilfe von Jquery Skelette ausfüllen
     - MySQL datenbank anlegen und auslessen
     - möglicher zwischenschritt benötigt, AJAX
+
+
+----------------------------------------------
+
+Design Ideen:
+	- Social media symbole farblich bei hover effekt hervorheben
