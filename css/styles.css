@@ -28,9 +28,37 @@
     animation:spin 0.5s linear ;
 }
 
+.clock_spinning {
+    margin: 20px auto auto auto;
+    -webkit-animation:circle 60s linear infinite;
+    -moz-animation:circle 60s linear infinite;
+    animation:circle 60s linear infinite;
+}
+
 @-moz-keyframes spin { 100% { -moz-transform: rotateY(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotateY(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); } }
+
+@-ms-keyframes circle {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes circle {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes circle {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes circle {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 
 .main {
     text-align: center;
@@ -65,12 +93,12 @@
     padding-top: 15px;
     font-size: 18px;
     color: white;
-    background-color: rgba(201, 201, 201, 0.7);
+
 }
 
 .clockbox {
     font-size: 25px;
-    padding: 25px;
+    padding: 25px 15px 15px 15px;
 }
 
 
@@ -92,6 +120,8 @@
     width: auto;
     margin-left: auto;
     margin-right: auto;
+    padding: 5px;
+    text-align: center;
 }
 
 .btn_infohtml {

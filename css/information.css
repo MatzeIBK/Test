@@ -67,7 +67,7 @@
 
 /*Set height of the slide*/
 .vertical :target{
-    height: auto;
+    height: 170px;
     width:100%;
 }
 
