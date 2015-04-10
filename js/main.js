@@ -1,10 +1,13 @@
-function growDiv() {
-    var growDiv = document.getElementById('grow');
-    if (growDiv.clientHeight) {
-        growDiv.style.height = 0;
-    } else {
-        var wrapper = document.querySelector('.measWrapper');
-        growDiv.style.height = wrapper.clientHeight + "px";
-    }
-    document.getElementById("social_btn").value=document.getElementById("social_btn").value=='Read more'?'Read less':'Read more';
+$(document).ready(function() {
+    $("body").css("display", "none");
+    $("body").fadeIn(2000);
+
+});
+/*
+function page2() {
+    window.location.assign("page2.html");
+};
+
+function page1() {
+    window.location.assign("page1.html");
 }
