@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
     $("body").css("display", "none");
     $("body").fadeIn(2000);
 
@@ -10,4 +10,15 @@ $(document).ready(function() {
     function redirectPage() {
         window.location = linkLocation;
     }
+});
+
+ */
+
+
+$(document).ready(function(){
+    $("button.press").click(function(){
+        $("div.main2").animate({
+            width: 'toggle'
+        });
+    });
 });
