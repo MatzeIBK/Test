@@ -16,9 +16,13 @@
 
 
 $(document).ready(function(){
-    $("button.press").click(function(){
-        $("div.main2").animate({
+    $("body").css("display", "none");
+    $("body").fadeIn(1500);
+
+    $("a#logo").click(function(){
+      $('#ma').animate({
             width: 'toggle'
         });
+        window.location.replace("");
     });
 });
