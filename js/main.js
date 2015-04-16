@@ -5,7 +5,7 @@ $(document).ready(function() {
     $('.link').click(function(event) {
         event.preventDefault();
         newLocation = this.href;
-        $('body').fadeOut(650, newpage);
+        $('body').fadeOut(500, newpage);
     });
 
     function newpage() {
