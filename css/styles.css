@@ -67,6 +67,17 @@
     border: solid;
 }
 
+
+.content-info {
+    height: 500px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+
 #text {
     font-size: 25px;
     color: #ffffff;
@@ -93,40 +104,17 @@
     padding-top: 15px;
     font-size: 18px;
     color: white;
+    position: relative;
+    width: 50%;
+    margin: -300px auto auto auto;
+    height: 100px;
+    text-align: center;
 
 }
 
 .clockbox {
     font-size: 25px;
     padding: 25px 15px 15px 15px;
-}
-
-
-/* styles for map.html */
-
-.maps_container {
-    height: 400px;
-    width: auto;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-
-}
-
-
-/* styles for artists.html*/
-.content-info {
-    height: 500px;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    text-align: center;
-}
-
-.btn_infohtml {
-    height: 35px;
-    margin-bottom: 10px;
 }
 
 /* styles for information.html/following*/
@@ -225,6 +213,11 @@
     float: right;
     margin-top: 10px;
     margin-right: 7px
+}
+
+.artist_container {
+    height: 80px;
+    border: solid #ffffff;
 }
 
 hr {
