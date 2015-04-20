@@ -215,6 +215,8 @@
     margin-right: 7px;
 }
 
+/* styles for artist.html */
+
 .artist_img {
     height: 79px;
     width: 79px;
@@ -232,7 +234,25 @@
     color: #ffffff;
     background-clip: content-box;
     padding: 0px 15px 0px 15px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 80px;
+    font-size: 28px;
 }
+
+.artist_text:hover {
+    background-color: rgba(42, 42, 42, 0.70);
+}
+
+.arrow_right {
+    height: 35px;
+    width: 35px;
+    margin-top: 20px;
+    margin-right: 5px;
+    float: right;
+}
+
+
 
 hr {
     margin-top: 10px;
