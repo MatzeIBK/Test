@@ -79,10 +79,10 @@
 }
 
 .outer {
-    width: auto;
-    overflow: auto;
-    white-space: nowrap;
-}
+     width: auto;
+     overflow: auto;
+     white-space: nowrap;
+ }
 
 .outer li {
     display: inline-block;

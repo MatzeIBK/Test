@@ -256,7 +256,7 @@
     background-color: rgba(110, 110, 110, 0.7);
     color: #ffffff;
     height: auto;
-    max-height: 375px;
+    max-height: 350px;
     margin-bottom: 15px;
     padding: 5px;
     text-align: justify;
@@ -267,6 +267,27 @@
 
 .js {
 
+}
+
+/* styles for food.html*/
+
+.outer_slide {
+    width: auto;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 0px;
+    margin-top: 240px;
+}
+
+.outer_slide li {
+    display: inline-block;
+    vertical-align: bottom;
+    width: auto;
+    white-space: normal;
+}
+
+.gallery_height {
+    height: 180px;
 }
 
 hr {
