@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns   = "http://www.electriclove.at/"
+<widget xmlns   = "http://www.home.at/"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "at.electriclove"
+        id          = "at.google"
         versionCode = "10"
         version     = "1.0.0" >
 
@@ -9,13 +9,13 @@
 
 
 
-    <name>ELF15</name>	
+    <name>name</name>
 
     <description>
-        The Festival App for Electric Love 2015
+        description
     </description>
 
-    <author href="http://www.electriclove.at/de/home" email="matthias.wanner@gmx.net">
+    <author href="http://www.google.at" email="matthias.wanner@gmx.net">
         Matthias Wanner
     </author>
     <icon src="icon.png" />
