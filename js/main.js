@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('body').css('display', 'none');
-    $('body').fadeIn(650);
-
+    $('body').fadeIn(550);
+/*
     $('.js').click(function(event) {
         event.preventDefault();
         newLocation = this.href;
@@ -13,5 +13,5 @@ $(document).ready(function() {
         window.location = newLocation;
 
     }
-
+*/
 });
