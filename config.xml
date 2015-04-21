@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns   = "http://www.electriclove.at/de/home"
+<widget xmlns   = "http://www.electriclove.at/"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "at.electriclove"
         versionCode = "10"
