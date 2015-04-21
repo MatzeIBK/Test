@@ -106,10 +106,13 @@
     color: white;
     position: relative;
     width: 50%;
-    margin: -300px auto auto auto;
+    margin: -55% auto auto auto;
     height: 100px;
     text-align: center;
+}
 
+.gallery_height {
+    height: 150px;
 }
 
 .clockbox {
@@ -134,6 +137,33 @@
     -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow:    0px 0px 12px 0px rgba(0, 0, 0, 0.5);
     box-shadow:         0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+}
+
+.header_arrow_back {
+    height: 30px;
+    width: 86px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.header_arrow_home {
+    height: 30px;
+    width: 152px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.header_div {
+    height: 40px;
+    margin-bottom: 5px;
+    background-color: rgba(110, 110, 110, 0.7);
+    color: #ffffff;
+}
+
+.header_div:hover {
+    background-color: rgba(42, 42, 42, 0.70);
 }
 
 .header_back {
@@ -276,7 +306,8 @@
     overflow: auto;
     white-space: nowrap;
     padding: 0px;
-    margin-top: 240px;
+    margin-top: 150px;
+    margin-bottom: 30px;
 }
 
 .outer_slide li {
@@ -286,8 +317,11 @@
     white-space: normal;
 }
 
-.gallery_height {
-    height: 180px;
+.food_text {
+    margin-top: 5px;
+    background-color: rgba(110, 110, 110, 0.7);
+    color: #ffffff;
+    height: auto;
 }
 
 hr {
