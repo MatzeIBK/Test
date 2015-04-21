@@ -8,7 +8,7 @@
     <!-- versionCode is optional and Android only -->
 
 
-    <icon src="img/max/icon.png" />
+    <icon src="icon.png" />
     <name>ELF15</name>	
 
     <description>
