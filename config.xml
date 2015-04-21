@@ -7,8 +7,8 @@
 
     <!-- versionCode is optional and Android only -->
 
-	
-	<icon src="img/max/icon.jpg" platform="android" width="48" height="48" density="mdpi" />
+
+    <icon src="img/max/icon.png" />
     <name>ELF15</name>	
 
     <description>
