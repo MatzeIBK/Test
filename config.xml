@@ -8,7 +8,7 @@
     <!-- versionCode is optional and Android only -->
 
 
-    <icon src="icon.png" />
+
     <name>ELF15</name>	
 
     <description>
@@ -18,7 +18,7 @@
     <author href="http://www.electriclove.at/de/home" email="matthias.wanner@gmx.net">
         Matthias Wanner
     </author>
-
+    <icon src="icon.png" />
     <gap:platform name="ios" />
     <gap:platform name="android" />
     <gap:platform name="winphone" />
