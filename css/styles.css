@@ -106,7 +106,7 @@
     color: white;
     position: relative;
     width: 50%;
-    margin: -300px auto auto auto;
+    margin: -55% auto auto auto;
     height: 100px;
     text-align: center;
 
@@ -276,7 +276,8 @@
     overflow: auto;
     white-space: nowrap;
     padding: 0px;
-    margin-top: 240px;
+    margin-top: 150px;
+    margin-bottom: 30px;
 }
 
 .outer_slide li {
@@ -287,7 +288,7 @@
 }
 
 .gallery_height {
-    height: 180px;
+    height: 150px;
 }
 
 hr {
