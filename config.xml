@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns   = "http://www.w3.org/ns/widgets"
+<widget xmlns   = "http://www.electriclove.at/de/home"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "at.electriclove"
         versionCode = "10"
@@ -7,13 +7,15 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>ELF15</name>
+	
+	<icon src="img/max/icon.jpg" platform="android" width="48" height="48" density="mdpi" />
+    <name>ELF15</name>	
 
     <description>
         The Festival App for Electric Love 2015
     </description>
 
-    <author href="https://build.phonegap.com" email="support@phonegap.com">
+    <author href="http://www.electriclove.at/de/home" email="matthias.wanner@gmx.net">
         Matthias Wanner
     </author>
 
