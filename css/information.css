@@ -110,6 +110,7 @@
     color: #ffffff;
     background-color: rgba(36,87,162, 1);
     border: 0px;
+    font-family: elfFont;
 }
 
 .btn_style:hover {
