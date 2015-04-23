@@ -302,7 +302,6 @@
     color: #ffffff;
     height: auto;
     max-height: 350px;
-    margin-bottom: 15px;
     padding: 5px;
     text-align: justify;
     font-size: 18px;
@@ -327,40 +326,17 @@
 
 /* styles for food.html*/
 
-
-
-.food_slide {
-    width: auto;
-    overflow: auto;
-    white-space: nowrap;
-    padding: 0px;
-    margin-top: 5px;
-    margin-bottom: 30px;
-}
-
-.food_slide li {
-    display: inline-block;
-    vertical-align: bottom;
-    width: auto;
-    white-space: normal;
-}
-
 .food_text {
-    margin-top: 5px;
-    background-color: rgba(110, 110, 110, 0.7);
-    color: #ffffff;
-    height: auto;
+
 }
+
 
 .food_img {
-    height: 250px;
+    height: 140px;
+    color: #ffffff;
+    background-color: rgba(110, 110, 110, 0.7);
 }
 
-.food_img:hover {
-    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow:    0px 0px 12px 0px rgba(0, 0, 0, 0.5);
-    box-shadow:         0px 0px 12px 0px rgba(0, 0, 0, 0.5);
-}
 
 @font-face {
     font-family: elfFont;
