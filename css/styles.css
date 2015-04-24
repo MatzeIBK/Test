@@ -324,19 +324,43 @@
 }
 
 
-/* styles for food.html*/
-
-.food_text {
-
-}
+/* styles for gastro.html*/
 
 
 .food_img {
-    height: 140px;
+    height: 160px;
     color: #ffffff;
     background-color: rgba(110, 110, 110, 0.7);
+    margin-top: 5px;
+    position: relative;
+    padding: 0px;
 }
 
+.food_img:hover {
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+    box-shadow:         0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+}
+
+.banner {
+    height: 40px;
+    color: #ffffff;
+    line-height: 40px;
+    background-color: rgba(163, 22, 0, 0.85);
+    font-family: elfFont;
+
+}
+
+.merch_text {
+    height: 30px;
+    width: 100%;
+    font-family: elfFont;
+    color: #ffffff;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    line-height: 30px;
+}
 
 @font-face {
     font-family: elfFont;
