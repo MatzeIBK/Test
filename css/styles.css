@@ -330,11 +330,13 @@
 /* styles for love.html*/
 
 .love_field {
-
     height: 200px;
     text-align: center;
     background-color: rgba(110, 110, 110, 0.7);
+}
 
+.love_field:hover {
+    background-color: rgba(42, 42, 42, 0.70);
 }
 
 .love_text {
@@ -342,18 +344,28 @@
     font-family: elfFont;
     font-size: 25px;
     line-height: 25px;
-    border-top: 1px solid #ffffff;
     height: 40px;
-    background-color: green;
+    background-color: rgba(50, 50, 50, 0.70);
 }
 
 .love_img {
-    margin-top: 15px;
+    margin-top: 5px;
     margin-bottom: 5px;
+    height: 150px;
+    width: 150px;
 
-    height: 140px;
-    width: 140px;
 }
+
+.love_img:hover {
+    -webkit-animation:spin 0.5s linear ;
+    -moz-animation:spin 0.5s linear ;
+    animation:spin 0.5s linear ;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotateY(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotateY(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); } }
+
+
 
 
 /* styles for merch.html*/
