@@ -327,26 +327,36 @@
     margin-right: 25px;
 }
 
+/* styles for love.html*/
 
-/* styles for gastro.html*/
+.love_field {
 
-
-.food_img {
-    height: 180px;
-    color: #ffffff;
+    height: 200px;
+    text-align: center;
     background-color: rgba(110, 110, 110, 0.7);
-    margin-top: 5px;
-    position: relative;
-    padding: 0px;
-    border: 1px solid #ffffff;
+
 }
 
-.food_img:hover {
-    background-color: rgba(42, 42, 42, 0.70);
-    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow:    0px 0px 12px 0px rgba(0, 0, 0, 0.5);
-    box-shadow:         0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+.love_text {
+    color: #ffffff;
+    font-family: elfFont;
+    font-size: 25px;
+    line-height: 25px;
+    border-top: 1px solid #ffffff;
+    height: 40px;
+    background-color: green;
 }
+
+.love_img {
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    height: 140px;
+    width: 140px;
+}
+
+
+/* styles for merch.html*/
 
 .banner {
     height: 40px;
