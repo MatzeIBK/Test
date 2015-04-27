@@ -158,8 +158,7 @@
     height: 30px;
     width: 86px;
     float: left;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin: 5px -86px 0px 5px;
 }
 
 .header_arrow_home {
@@ -175,6 +174,7 @@
     margin-bottom: 5px;
     background-color: rgba(110, 110, 110, 0.7);
     color: #ffffff;
+    text-align: center;
 }
 
 .header_div:hover {
@@ -282,7 +282,8 @@
     margin: 0px;
     vertical-align: middle;
     line-height: 80px;
-    font-size: 22px;
+    font-size: 20px;
+    font-family: elfFont;
 }
 
 .artist_text:hover {
@@ -297,15 +298,18 @@
     float: right;
 }
 
+
 .artist_home {
     background-color: rgba(110, 110, 110, 0.7);
     color: #ffffff;
-    height: auto;
-    max-height: 350px;
+    height: 300px;
+    width: 100%;
     padding: 5px;
     text-align: justify;
     font-size: 18px;
     overflow: scroll;
+    margin-bottom: 5px;
+
 }
 
 .artist_social {
