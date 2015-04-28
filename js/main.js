@@ -14,4 +14,11 @@ $(document).ready(function() {
 
     }
 */
+
+    var wantedHeight = $(window).height();
+    var wantedWidth = $(window).width();
+
+    $('#test').css('height', wantedHeight);
+    $('#test').css('width', wantedWidth);
+
 });
