@@ -355,19 +355,53 @@
     margin-bottom: 10px;
     height: 140px;
     width: 140px;
+    position: relative;
 
 }
 
-.love_img:hover {
-    -webkit-animation:spin 0.5s linear ;
-    -moz-animation:spin 0.5s linear ;
-    animation:spin 0.5s linear ;
+
+/* animation for shopping cart */
+
+.shopping:hover {
+    -webkit-animation: shopping 1s linear;
+    -moz-animation: shopping 1s linear;
+    animation: shopping 1s linear;
 }
-@-moz-keyframes spin { 100% { -moz-transform: rotateY(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotateY(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); } }
 
+@-webkit-keyframes shopping {
+    0%   {left:0px;}
+    50%  {left:100px;}
+    100% {left:0px;}
+}
+@keyframes shopping {
+    0%   {left:0px;}
+    50%  {left:200px;}
+    100% {left:0px;}
+}
 
+/* animation for hourglass turning */
+
+.hourglass:hover {
+    -webkit-animation: glass 1s ease-in ;
+    -moz-animation: glass 1s ease-in ;
+    animation: glass 1s ease-in ;
+    animation-direction: alternate;
+}
+@-moz-keyframes glass {
+    0% { -moz-transform: rotateZ(0deg); }
+    100% { -moz-transform: rotateZ(180deg); }
+}
+@-webkit-keyframes glass {
+    0% { -webkit-transform: rotateZ(0deg); }
+    100% { -webkit-transform: rotateZ(180deg); } }
+@keyframes glass {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(180deg);
+    }
+}
 
 
 /* styles for merch.html*/
