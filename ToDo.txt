@@ -8,4 +8,6 @@
 ----------------------------------------------
 
 Design Ideen:
-	- Social media symbole farblich bei hover effekt hervorheben
+	- image drehen/animieren bei hover von div
+	- gallery clickable --> popup foto
+
