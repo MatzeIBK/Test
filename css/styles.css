@@ -331,37 +331,34 @@
 }
 
 /* styles for love.html*/
-
-.love_field {
-    height: 200px;
-    text-align: center;
-    background-color: rgba(110, 110, 110, 0.7);
-    margin-bottom: 10px;
-
+.alink {
+    text-decoration: none;
+    color: #ffffff;
 }
 
-.love_field:hover {
+.text_field {
+    text-align: left;
+    font-size: 18px;
+    font-family: elfFont;
+    padding: 10px 0px 0px 10px;
+}
+
+.img_field {
+    height: 140px;
+    padding-top: 10px;
+}
+
+.row_style {
+    height: 160px;
+    background-color: rgba(110, 110, 110, 0.7);
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
+}
+
+.row_style:hover {
+    color: #ffffff;
     background-color: rgba(42, 42, 42, 0.70);
 }
-
-.love_text {
-    color: #ffffff;
-    font-family: elfFont;
-    font-size: 20px;
-    line-height: 40px;
-    height: 40px;
-    background-color: rgba(50, 50, 50, 0.70);
-}
-
-.love_img {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 140px;
-    width: 140px;
-    position: relative;
-
-}
-
 
 /* animation for shopping cart */
 
@@ -473,10 +470,12 @@
 }
 
 .nav.prev:hover {
+    color: #ffffff;
     background-color: rgba(42, 42, 42, 0.70);
 }
 
 .nav.next:hover {
+    color: #ffffff;
     background-color: rgba(42, 42, 42, 0.70);
 }
 
