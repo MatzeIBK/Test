@@ -338,18 +338,19 @@
 
 .text_field {
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     font-family: elfFont;
-    padding: 10px 0px 0px 10px;
+    margin: 20px auto auto auto;
 }
 
 .img_field {
-    height: 140px;
-    padding-top: 10px;
+    margin: 20px auto auto auto;
+    height: 100px;
+
 }
 
 .row_style {
-    height: 160px;
+    height: 140px;
     background-color: rgba(110, 110, 110, 0.7);
     padding: 0px;
     margin: 10px 0px 0px 0px;
