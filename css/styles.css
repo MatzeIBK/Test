@@ -445,28 +445,48 @@
     width: auto;
 }
 
+/* styles for gallery.html*/
 
-ul {
-    padding:0 0 0 0;
-    margin:0 0 0 0;
+.swipe {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0 auto 0;
 }
-ul li {
-    list-style:none;
-    margin-bottom:25px;
+.swipe-wrap {
+    overflow: hidden;
+    position: relative;
 }
-ul li img {
-    cursor: pointer;
+.swipe-wrap > div {
+    float: left;
+    width: 100%;
+    position: relative;
 }
 
+.navbutton {
+    height: 40px;
+    line-height: 40px;
+    font-family: elfFont;
+    font-size: 20px;
+    margin-top: 5px;
+    background-color: rgba(110, 110, 110, 0.7);
+}
 
+.nav.prev:hover {
+    background-color: rgba(42, 42, 42, 0.70);
+}
 
+.nav.next:hover {
+    background-color: rgba(42, 42, 42, 0.70);
+}
 
-
-
+/* overall used font */
 @font-face {
     font-family: elfFont;
     src: url(../fonts/Exo-DemiBold-Italic.otf);
 }
+
+/* smaller margins to the horizontal divider*/
 
 hr {
     margin-top: 10px;

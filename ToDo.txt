@@ -9,5 +9,5 @@
 
 Design Ideen:
 	- image drehen/animieren bei hover von div
-	- gallery clickable --> popup foto
+	- gallery anpassen
 
