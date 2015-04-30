@@ -381,7 +381,6 @@
 }
 
 /* animation for hourglass turning */
-
 .hourglass:hover {
     -webkit-animation: glass 1s ease-in ;
     -moz-animation: glass 1s ease-in ;
