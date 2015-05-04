@@ -336,12 +336,22 @@
     color: #ffffff;
 }
 
-.text_field {
-    text-align: left;
-    font-size: 16px;
-    font-family: elfFont;
-    margin: 5px auto auto auto;
+.outer {
+    position: relative;
+    height: 140px;
 }
+
+.text_field {
+    width: 75%;
+    height: 75%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    font-family: elfFont;
+    font-size: 16px;
+}
+
 
 .img_field {
     margin: 20px auto auto auto;
@@ -478,6 +488,26 @@
     color: #ffffff;
     background-color: rgba(42, 42, 42, 0.70);
 }
+
+
+/* styles for food.html*/
+
+.food_container {
+    height: 80px;
+    border-bottom: 1px solid #ffffff;
+    text-align: center;
+    line-height: 80px;
+    background-color: rgba(110, 110, 110, 0.7);
+    font-family: elfFont;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.food_container:hover {
+    background-color: rgba(42, 42, 42, 0.70);
+}
+
+
 
 /* overall used font */
 @font-face {
