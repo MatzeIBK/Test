@@ -1,25 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-
-    <!-- Bootstrap init -->
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="phonegap.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCmouXxBlDi9G_UQigvgCxilD8LjKWMfBc&sensor=false#"></script>
-
-    <!-- Styles init -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css"/>
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
-    <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
-    <link rel="stylesheet" href="css/styles.css" type="text/css"/>
-
-
-    <title>Electric Love Festival</title>
     <style>
         html, body, #map-canvas {
             height: 100%;
@@ -27,6 +11,7 @@
             padding: 0px
         }
     </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
 
     <script>
         // Note: This example requires that you consent to location sharing when
@@ -37,9 +22,7 @@
 
         function initialize() {
             var mapOptions = {
-                zoom: 17    ,
-                mapTypeId: google.maps.MapTypeId.HYBRID
-
+                zoom: 6
             };
             map = new google.maps.Map(document.getElementById('map-canvas'),
                     mapOptions);
@@ -50,9 +33,10 @@
                     var pos = new google.maps.LatLng(position.coords.latitude,
                             position.coords.longitude);
 
-                    var infowindow = new google.maps.Marker({
+                    var infowindow = new google.maps.InfoWindow({
                         map: map,
                         position: pos,
+                        content: 'Location found using HTML5.'
                     });
 
                     map.setCenter(pos);

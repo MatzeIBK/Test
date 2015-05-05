@@ -97,6 +97,22 @@
 }
 
 
+
+/* styles for timetable*/
+
+.timetable_nav {
+    background-color: rgba(201, 201, 201, 0.7);
+}
+
+.timetable_element {
+    border-radius: 0 4px 0 0;
+
+}
+
+.timetable_element:hover {
+    background-color: rgba(42, 42, 42, 0.70);
+}
+
 /* Styles for countdown.html */
 
 .outer_slide {
