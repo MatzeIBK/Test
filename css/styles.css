@@ -139,10 +139,15 @@
 }
 /* styles for timetable_artists*/
 
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background-color: rgba(36, 87, 162, 1);
+}
 
 .tt_tab {
     text-decoration: none;
     color: #ffffff;
+    font-size: 20px;
+
 }
 
 .row_container {
