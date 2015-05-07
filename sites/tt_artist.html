@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example of Bootstrap 3 Dynamic Tabs</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        .bs-example{
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="everything" class="content-info" style="padding: 5px; color: #ffffff">
+        <a href="" style="text-decoration: none" class="js">
+            <div class="header_div" onclick="history.go(-1);return true;">
+                <img src="../../img/max/arrow_left_back.gif" class="header_arrow_back"/>
+                Artists
+            </div>
+        </a>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" class="tt_tab" href="#wednesday">Wednesday</a></li>
+            <li><a data-toggle="tab" class="tt_tab" href="#thursday">Thrusday</a></li>
+            <li><a data-toggle="tab" class="tt_tab" href="#friday">Friday</a></li>
+            <li><a data-toggle="tab" class="tt_tab" href="#saturday">Saturday</a></li>
+
+        </ul>
+        <div class="tab-content">
+            <div id="wednesday" class="tab-pane fade in active">
+                <div class="row_container">
+                    <div class=""><img src="../img/djs/alesso.jpg" class="a_img"></div>
+                        <div class="a_name">Alesso</div>
+                        <hr class="a_hr">
+                        <div class="a_info">20:00</div>
+                        <div class="a_info">Mainstage</div>
+                </div>
+                <div class="row_container">
+                    <div class=""><img src="../img/djs/aoki.jpg" class="a_img"></div>
+                    <div class="a_name">Steve Aoki</div>
+                    <hr class="a_hr">
+                    <div class="a_info">21:30</div>
+                    <div class="a_info">Mainstage</div>
+                </div>
+                <div class="row_container">
+                    <div class=""><img src="../img/djs/armin.jpg" class="a_img"></div>
+                    <div class="a_name">Armin van Buuren</div>
+                    <hr class="a_hr">
+                    <div class="a_info">22:00</div>
+                    <div class="a_info">Mainstage</div>
+                </div>
+                <div class="row_container">
+                    <div class=""><img src="../img/djs/axwell.jpg" class="a_img"></div>
+                    <div class="a_name">Axwell Λ Ingrosso</div>
+                    <hr class="a_hr">
+                    <div class="a_info">20:00</div>
+                    <div class="a_info">Mainstage</div>
+                </div>
+                <div class="row_container">
+                    <div class=""><img src="../img/djs/deorro.jpg" class="a_img"></div>
+                    <div class="a_name">Deorro</div>
+                    <hr class="a_hr">
+                    <div class="a_info">21:30</div>
+                    <div class="a_info">Mainstage</div>
+                </div>
+                <div class="row_container">
+                    <div class=""><img src="../img/djs/knifeparty.jpg" class="a_img"></div>
+                    <div class="a_name">Knifeparty</div>
+                    <hr class="a_hr">
+                    <div class="a_info">22:00</div>
+                    <div class="a_info">Mainstage</div>
+                </div>
+                <div class="row_container">
+                    <div class=""><img src="../img/djs/showtek.jpg" class="a_img"></div>
+                    <div class="a_name">Showtek</div>
+                    <hr class="a_hr">
+                    <div class="a_info">20:00</div>
+                    <div class="a_info">Mainstage</div>
+                </div>
+                <div class="row_container">
+                    <div class=""><img src="../img/djs/tiesto.jpg" class="a_img"></div>
+                    <div class="a_name">Tiesto</div>
+                    <hr class="a_hr">
+                    <div class="a_info">21:30</div>
+                    <div class="a_info">Mainstage</div>
+                </div>
+                <div class="row_container">
+                    <div class=""><img src="../img/djs/zedd.jpg" class="a_img"></div>
+                    <div class="a_name">Zedd</div>
+                    <hr class="a_hr">
+                    <div class="a_info">22:00</div>
+                    <div class="a_info">Mainstage</div>
+                </div>
+            </div>
+            <div id="thursday" class="tab-pane fade">
+                <div class="row_container">
+                    <div class=""><img src="../img/djs/axwell.jpg" class="a_img"></div>
+                    <div class="a_name">Axwell Λ Ingrosso</div>
+                    <hr class="a_hr">
+                    <div class="a_info">20:00</div>
+                    <div class="a_info">Mainstage</div>
+                </div>
+                <div class="row_container">
+                    <div class=""><img src="../img/djs/deorro.jpg" class="a_img"></div>
+                    <div class="a_name">Deorro</div>
+                    <hr class="a_hr">
+                    <div class="a_info">21:30</div>
+                    <div class="a_info">Mainstage</div>
+                </div>
+                <div class="row_container">
+                    <div class=""><img src="../img/djs/knifeparty.jpg" class="a_img"></div>
+                    <div class="a_name">Knifeparty</div>
+                    <hr class="a_hr">
+                    <div class="a_info">22:00</div>
+                    <div class="a_info">Mainstage</div>
+                </div>
+            </div>
+            <div id="friday" class="tab-pane fade">
+                <div class="row_container">
+                    <div class=""><img src="../img/djs/showtek.jpg" class="a_img"></div>
+                    <div class="a_name">Showtek</div>
+                    <hr class="a_hr">
+                    <div class="a_info">20:00</div>
+                    <div class="a_info">Mainstage</div>
+                </div>
+                <div class="row_container">
+                    <div class=""><img src="../img/djs/tiesto.jpg" class="a_img"></div>
+                    <div class="a_name">Tiesto</div>
+                    <hr class="a_hr">
+                    <div class="a_info">21:30</div>
+                    <div class="a_info">Mainstage</div>
+                </div>
+                <div class="row_container">
+                    <div class=""><img src="../img/djs/zedd.jpg" class="a_img"></div>
+                    <div class="a_name">Zedd</div>
+                    <hr class="a_hr">
+                    <div class="a_info">22:00</div>
+                    <div class="a_info">Mainstage</div>
+                </div>
+            </div>
+            <div id="saturday" class="tab-pane fade">
+                <div class="row_container">
+                    <div class=""><img src="../img/djs/alesso.jpg" class="a_img"></div>
+                    <div class="a_name">Alesso</div>
+                    <hr class="a_hr">
+                    <div class="a_info">20:00</div>
+                    <div class="a_info">Mainstage</div>
+                </div>
+                <div class="row_container">
+                    <div class=""><img src="../img/djs/aoki.jpg" class="a_img"></div>
+                    <div class="a_name">Steve Aoki</div>
+                    <hr class="a_hr">
+                    <div class="a_info">21:30</div>
+                    <div class="a_info">Mainstage</div>
+                </div>
+                <div class="row_container">
+                    <div class=""><img src="../img/djs/armin.jpg" class="a_img"></div>
+                    <div class="a_name">Armin van Buuren</div>
+                    <hr class="a_hr">
+                    <div class="a_info">22:00</div>
+                    <div class="a_info">Mainstage</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
