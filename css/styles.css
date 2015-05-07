@@ -139,6 +139,13 @@
 }
 /* styles for timetable_artists*/
 
+.pill {
+    padding: 0px;
+    margin: 0px -3px 0px 0px;
+    border: 2px solid #808080;
+    border-radius: 7px;
+}
+
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
     background-color: rgba(36, 87, 162, 1);
 }
