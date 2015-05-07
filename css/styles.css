@@ -100,6 +100,46 @@
 
 /* styles for timetable*/
 
+.tt_info {
+    background-color: rgba(110, 110, 110, 0.7);
+}
+
+.tt_info:hover {
+    background-color: rgba(163, 22, 0, 0.85);
+}
+
+.tt_row {
+    color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+}
+
+.tt_element {
+    background-color: rgba(110, 110, 110, 0.7);
+}
+
+.tt_element:hover {
+    background-color: rgba(42, 42, 42, 0.70);
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.tt_text {
+    text-align: center;
+    height: 100px;
+    font-family: elfFont;
+    line-height: 100px;
+    font-size: 30px;
+}
+
+.tt_img {
+    height: 100px;
+    margin-bottom: 50px;
+    
+}
+/* styles for timetable_artists*/
+
+
 .tt_tab {
     text-decoration: none;
     color: #ffffff;
