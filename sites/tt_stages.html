@@ -9,17 +9,10 @@
     <script src="../js/jquery-1.11.2.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('[data-toggle="popover"]').popover({
-                placement : 'top'
-            });
-        });
-    </script>
 </head>
 
 <body>
-<div id="everything" class="content-info" style="padding: 5px; color: #ffffff">
+<div id="everything" class="content-info" style="padding: 5px;">
     <a href="" style="text-decoration: none" class="js">
         <div class="header_div" onclick="history.go(-1);return true;" style="margin-bottom: 10px">
             <img src="../img/max/arrow_left_back.gif" class="header_arrow_back"/>
@@ -27,7 +20,25 @@
         </div>
     </a>
 
-    <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+    <a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal"><img src="../img/max/shopping.png"></a>
+
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog" style=" margin: 100px auto 0px auto; height: 200px; width: 200px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Sort by:</h4>
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn btn-success">Name</button>
+                    <button type="button" class="btn btn-success">Time</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 
