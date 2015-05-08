@@ -12,32 +12,36 @@
 
 <body>
     <div id="everything" class="content-info" style="padding: 5px; color: #ffffff">
-        <a href="" style="text-decoration: none; color: #ffffff;" class="js">
-            <div class="header_div" onclick="history.go(-1);return true;" style="margin-bottom: 10px; margin-right: 200px">
-                <img src="../img/max/arrow_left_back.gif" class="header_arrow_back"/>
-                Artists
-                <a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal" style="float: right; margin-right: 10px; padding: 6px; width: 150px"><img src="../img/max/shopping.png" style="height: 25px"></a>
-
-                <!-- Modal HTML -->
-                <div id="myModal" class="modal fade">
-                    <div class="modal-dialog" style=" margin: 100px auto 0px auto; height: 200px; width: 200px;">
-                        <div class="modal-content" style="background-color: rgba(110, 110, 110, 1);">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Sort by:</h4>
-                            </div>
-                            <div class="modal-body">
-                                <button type="button" class="btn btn-success">Name</button>
-                                <button type="button" class="btn btn-success">Time</button>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
+        <div class="row" style="padding: 0px; margin: 0px">
+            <a href="" style="text-decoration: none;" class="js">
+                <div class="col-xs-10 header_div" style="padding: 0px">
+                    <img src="../img/max/arrow_left_back.gif" class="header_arrow_back"/>
+                    Artists
+                </div>
+            </a>
+            <div class="col-xs-2" style="padding: 0px">
+                <a href="#myModal" class="btn options" data-toggle="modal" style="padding: 5px; height: 40px; width: 100%;"><img src="../img/max/options.png" style="height: 30px; margin-left: 20px"
+                    onmouseover="this.src='../img/max/options2.png'"
+                    onmouseout="this.src='../img/max/options.png'"></a>
+            </div>
+        </div>
+        <!-- Modal HTML -->
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog" style=" margin: 100px auto 0px auto; height: 200px; width: 200px; ">
+                <div class="modal-content" style="background-color: rgba(110, 110, 110, 1);">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Sort by:</h4>
+                    </div>
+                    <div class="modal-body">
+                        <button type="button" class="btn btn-success">Name</button>
+                        <button type="button" class="btn btn-success">Time</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
-
             </div>
-        </a>
+        </div>
 
         <ul class="nav nav-pills" style="margin-bottom: 10px;">
             <li class="active col-xs-3 pill"><a data-toggle="pill" class="tt_tab" href="#wednesday">WED</a></li>
