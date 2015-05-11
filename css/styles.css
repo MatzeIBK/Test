@@ -75,6 +75,8 @@
     margin-right: auto;
     padding: 5px;
     text-align: center;
+    padding: 5px;
+    color: #ffffff
 }
 
 
@@ -102,6 +104,7 @@
 
 .tt_info {
     background-color: rgba(110, 110, 110, 0.7);
+    margin: 10px 10px 0px 10px;
 }
 
 .tt_info:hover {
@@ -120,8 +123,6 @@
 
 .tt_element:hover {
     background-color: rgba(42, 42, 42, 0.70);
-    text-decoration: none;
-    color: #ffffff;
 }
 
 .tt_text {
@@ -194,7 +195,7 @@
     height: 45px;
     line-height: 45px;
     font-family: elfFont;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .a_hr {
@@ -205,9 +206,19 @@
 .a_info {
     height: 25px;
     line-height: 25px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
+.tt-modal-dialog {
+    margin: 100px auto 0px auto;
+    height: 200px;
+    width: 200px;
+}
+
+.tt-modal-content {
+    background-color: rgba(110, 110, 110, 1);
+    border-radius: 0px;
+}
 /* */
 
 /* Styles for countdown.html */

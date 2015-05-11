@@ -5,6 +5,14 @@
     - möglicher zwischenschritt benötigt, AJAX
 
 
+    STYLES:
+
+    - styles auslagern
+    - styles merge
+    -
+
+
+
 ----------------------------------------------
 
 Design Ideen:
