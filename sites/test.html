@@ -9,11 +9,11 @@
         }
     </style>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="../js/npm.js"></script>
 </head>
 <body>
 
-Reversed - <span></span>
-
+<div class="container" id="hello"></div>
     <div class="test">One
         <div class="tmp">
             one
@@ -35,29 +35,5 @@ Reversed - <span></span>
     </div>
 
     <button id="sort">click me!</button>
-
-    <script>
-        $(document).ready(function() {
-            var a = [];
-
-            function disp( divs ) {
-                for ( var i = 0; i < divs.length; i++ ) {
-                    a.push( divs[ i ].innerHTML );
-                }
-                $( "span" ).text( a.join( " " ) );
-
-            }
-            $("#sort").click(function(){
-                a.sort();
-                $("span").text(a.join( " " ));
-            });
-            disp( $( ".tmp" ).toArray().reverse() );
-        });
-
-
-
-
-    </script>
-
 </body>
 </html>
