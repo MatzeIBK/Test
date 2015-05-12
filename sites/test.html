@@ -35,23 +35,26 @@ Reversed - <span></span>
     </div>
 
     <button id="sort">click me!</button>
-    <div class="out"></div>
 
     <script>
-
-        $("#sort").click(function(){
-            a.sort();
-            $(".out").text(a.join(" "));
-        });
-        function disp( divs ) {
+        $(document).ready(function() {
             var a = [];
-            for ( var i = 0; i < divs.length; i++ ) {
-                a.push( divs[ i ].innerHTML );
-            }
-            $( "span" ).text( a.join( " " ) );
-        }
 
-        disp( $( ".tmp" ).toArray().reverse() );
+            function disp( divs ) {
+                for ( var i = 0; i < divs.length; i++ ) {
+                    a.push( divs[ i ].innerHTML );
+                }
+                $( "span" ).text( a.join( " " ) );
+
+            }
+            $("#sort").click(function(){
+                a.sort();
+                $("span").text(a.join( " " ));
+            });
+            disp( $( ".tmp" ).toArray().reverse() );
+        });
+
+
 
 
     </script>
