@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/jquery-1.11.2.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+
+
+    <script>
+        function disp( divs ) {
+            var a = [];
+            for ( var i = 0; i < divs.length; i++ ) {
+                a.push( divs[ i ].innerHTML );
+            }
+            $( "span" ).text( a.join( " " ) );
+        }
+
+        disp( $( ".a_name" ).toArray().reverse() );
+    </script>
+
 </head>
 
 <body>
@@ -25,6 +39,9 @@
                     onmouseout="this.src='../img/max/options.png'"></a>
             </div>
         </div>
+
+        test - <span></span>
+
         <!-- Modal HTML -->
         <div id="myModal" class="modal fade">
             <div class="modal-dialog tt-modal-dialog">
@@ -33,8 +50,8 @@
                         <h4 class="modal-title">Sort by:</h4>
                     </div>
                     <div class="modal-body">
-                        <button type="button" class="btn btn-success">Name</button>
-                        <button type="button" class="btn btn-success">Time</button>
+                        <button type="button" id="alphBtn" class="btn btn-success">Name</button>
+                        <button type="button" id="numBtn" class="btn btn-success">Time</button>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -51,7 +68,8 @@
 
         </ul>
 
-        <div class="tab-content">
+        <div class="tab-content" id="container">
+            <button id="alphaBtn">Alpha</button>
             <div id="wednesday" class="tab-pane fade in active">
                 <div class="row_container">
                     <div class=""><img src="../img/djs/alesso.jpg" class="a_img"></div>
