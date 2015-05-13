@@ -541,7 +541,7 @@
 /* styles for merch.html*/
 
 .banner {
-    height: 40px;
+    height: auto;
     color: #ffffff;
     line-height: 40px;
     background-color: rgba(163, 22, 0, 0.85);
@@ -557,11 +557,12 @@
     position: absolute;
     margin-top: 5px;
     border-top: 1px solid #ffffff;
+    vertical-align: middle;
 
 }
 
 .merch_container {
-    height: 180px;
+    height: 200px;
     color: #ffffff;
     background-color: rgba(110, 110, 110, 0.7);
     margin-top: 5px;
