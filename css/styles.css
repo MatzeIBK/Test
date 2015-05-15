@@ -242,17 +242,17 @@
 }
 
 .stage_row:hover .stage_img {
-    -webkit-animation:diff1 0.3s linear;
-    -moz-animation:diff1 0.3s linear ;
-    animation:diff1 0.3s linear ;
+    -webkit-animation:diff1 0.2s linear;
+    -moz-animation:diff1 0.2s linear ;
+    animation:diff1 0.2s linear ;
 
 }
 
 .stage_row:hover .stage_text {
     background-color: rgba(42, 42, 42, 0.70);
-    -webkit-animation:diff2 0.3s linear ;
-    -moz-animation:diff2 0.3s linear ;
-    animation:diff2 0.3s linear ;
+    -webkit-animation:diff2 0.2s linear ;
+    -moz-animation:diff2 0.2s linear ;
+    animation:diff2 0.2s linear ;
 
 }
 
