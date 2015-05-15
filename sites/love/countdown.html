@@ -21,31 +21,40 @@
     <style type="text/css">
         .numbers {
             padding: 0px;
-            width: 45px;
-            text-align: center;
-            font-family: Arial;
-            font-size: 38px;
-            font-weight: bold;   /* options are normal, bold, bolder, lighter */
-            font-style: normal;  /* options are normal or italic */
-            color: #FFFFFF;      /* change color using the hexadecimal color codes for HTML */
-        }
-        .title {        /* the styles below will affect the title under the numbers, i.e., “Days”, “Hours”, etc. */
-            border-style: none;
-            width: 45px;
             text-align: center;
             font-family: elfFont;
-            font-size: 15px;
-
-            font-weight: bold;   /* options are normal, bold, bolder, lighter */
-            color: #FFFFFF;      /* change color using the hexadecimal color codes for HTML */
+            font-size: 38px;
+            font-weight: bold;
+            font-style: normal;
+            color: #FFFFFF;
+            background-color: rgba(42, 42, 42, 0.90);
+            height: 80px;
         }
-        #table {
-            width: auto;
-            height: 200px;
-            border-style: ridge;
-            border-width: 3px;
-            border-color: #666666;      /* change color using the hexadecimal color codes for HTML */
-            background-color: #222222;  /* change color using the hexadecimal color codes for HTML */
+        .title {
+            border-style: none;
+            text-align: center;
+            font-family: elfFont;
+            font-size: 13px;
+            font-weight: bold;
+            color: #FFFFFF;
+            background-color: rgba(42, 42, 42, 0.90);
+            height: 50px;
+
+        }
+        .countdown_text {
+            font-family: elfFont;
+            font-size: 20px;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            background-color: rgba(42, 42, 42, 0.90);
+            margin-top: 50px;
+            height: 100px;
+            line-height: 40px;
+
+        }
+        .col-xs-3 {
+
         }
     </style>
 
@@ -59,30 +68,31 @@
             Countdown
         </div>
     </a>
-    <table id="table" border="0" style="margin: 100px auto auto auto">
+    <div class="container-fluid">
+        <div class="col-xs-12 countdown_text">Time until Electric Love Festival 2015 starts:</div>
 
-        <tr style="margin-bottom: 20px">
-            <td align="center" colspan="6" style="font-family: elfFont; color: #ffffff; margin: 10px 0 0 10px; font-size: 20px">Time left until Electric Love Festival starts
-                <div class="numbers" id="count2" style="padding: 5px 0 0 0;"></div></td>
 
-        </tr>
-        <tr id="spacer1">
-            <td align="center" ><div class="numbers" ></div></td>
-            <td align="center" ><div class="numbers" id="dday"></div></td>
-            <td align="center" ><div class="numbers" id="dhour"></div></td>
-            <td align="center" ><div class="numbers" id="dmin"></div></td>
-            <td align="center" ><div class="numbers" id="dsec"></div></td>
-            <td align="center" ><div class="numbers" ></div></td>
-        </tr>
-        <tr id="spacer2">
-            <td align="center" ><div class="title" ></div></td>
-            <td align="center" ><div class="title" id="days">Days</div></td>
-            <td align="center" ><div class="title" id="hours">Hours</div></td>
-            <td align="center" ><div class="title" id="minutes">Minutes</div></td>
-            <td align="center" ><div class="title" id="seconds">Seconds</div></td>
-            <td align="center" ><div class="title" ></div></td>
-        </tr>
-    </table>
+        <div class="numbers" id="count2"></div>
+
+        <div class="row" style="padding: 0px; margin: 0px;">
+            <div class="col-xs-3 numbers" id="dday" style="padding: -5px"></div>
+            <div class="col-xs-3 numbers" id="dhour"></div>
+            <div class="col-xs-3 numbers" id="dmin"></div>
+            <div class="col-xs-3 numbers" id="dsec"></div>
+
+        </div>
+
+
+
+        <div class="row" style="padding: 0px; margin: 0px;">
+            <div class="col-xs-3 title" id="days">Days</div>
+            <div class="col-xs-3 title" id="hours">Hours</div>
+            <div class="col-xs-3 title" id="minutes">Minutes</div>
+            <div class="col-xs-3 title" id="seconds">Secounds</div>
+
+        </div>
+    </div>
+
 </div>
 
 <script type="text/javascript">
