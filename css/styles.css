@@ -231,9 +231,14 @@
     background-color: rgba(110, 110, 110, 0.7);
 }
 
-.r_img {
-
-
+.stage_info {
+    font-family: elfFont;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: rgba(110, 110, 110, 0.7);
+    text-align: justify;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 .stage_row:hover .stage_img {
@@ -244,6 +249,7 @@
 }
 
 .stage_row:hover .stage_text {
+    background-color: rgba(42, 42, 42, 0.70);
     -webkit-animation:diff2 0.3s linear ;
     -moz-animation:diff2 0.3s linear ;
     animation:diff2 0.3s linear ;
