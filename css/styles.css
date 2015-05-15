@@ -219,48 +219,8 @@
     background-color: rgba(110, 110, 110, 1);
     border-radius: 0px;
 }
-/* */
 
-/* Styles for countdown.html */
-
-.outer_slide {
-    width: auto;
-    overflow: auto;
-    white-space: nowrap;
-    padding: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.outer_slide li {
-    display: inline-block;
-    vertical-align: bottom;
-    width: auto;
-    white-space: normal;
-}
-
-.clocktext {
-    padding-top: 15px;
-    font-size: 18px;
-    color: white;
-    position: relative;
-    width: 50%;
-    margin: -55% auto auto auto;
-    height: 100px;
-    text-align: center;
-}
-
-.gallery_height {
-    height: 300px;
-}
-
-.clockbox {
-    font-size: 25px;
-    padding: 25px 15px 15px 15px;
-}
-
-/* styles for information.html/following*/
-
+/* styles for information.html/following and information.css*/
 
 #social_btn {
     width: 100%;
@@ -612,6 +572,42 @@
 .nav.next:hover {
     color: #ffffff;
     background-color: rgba(42, 42, 42, 0.70);
+}
+
+/* Styles for countdown.html */
+
+.numbers {
+    padding: 0px;
+    text-align: center;
+    font-family: elfFont;
+    font-size: 38px;
+    font-weight: bold;
+    font-style: normal;
+    color: #FFFFFF;
+    background-color: rgba(42, 42, 42, 0.90);
+    height: 80px;
+}
+.title {
+    border-style: none;
+    text-align: center;
+    font-family: elfFont;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: rgba(42, 42, 42, 0.90);
+    height: 50px;
+
+}
+.countdown_text {
+    font-family: elfFont;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(42, 42, 42, 0.90);
+    margin-top: 50px;
+    height: 100px;
+    line-height: 40px;
 }
 
 
