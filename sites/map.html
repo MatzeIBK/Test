@@ -4,6 +4,8 @@
     <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCmouXxBlDi9G_UQigvgCxilD8LjKWMfBc&sensor=false#"></script>
 
     <script>
+
+        var infowindow = null;
         function initialize()
         {
             var mapProp = {
@@ -12,32 +14,66 @@
                 mapTypeId: google.maps.MapTypeId.SATELLITE
             };
             var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-            setMarkers(map, places);
+            setStages(map, places);
+            setCamping(map, camps);
+
+            infowindow = new google.maps.InfoWindow({
+                content: "loading..."
+            });
         }
 
         var places = [
-                ['Mainstage', 47.823641, 13.174995, 1],
-                ['Clubcircus', 47.819711, 13.175657, 2],
-                ['qdance', 47.822762, 13.173973, 3],
-                ['heineken', 47.819755, 13.176511, 4],
-                ['stonehenge', 47.821173, 13.171642, 6],
-                ['basic', 47.820915, 13.171459, 5],
-                ['caravan', 47.823966, 13.178707, 7],
-                ['comfort', 47.823263, 13.179155, 8]
+                ['Mainstage', 47.823641, 13.174995, 1, 'Main - Stage'],
+                ['Clubcircus', 47.819711, 13.175657, 2, 'Clubcircus - Stage'],
+                ['qdance', 47.822762, 13.173973, 3, 'Q-Dance - Stage'],
+                ['heineken', 47.819755, 13.176511, 4, 'Heineken-Star Club'],
+                ['stonehenge', 47.821173, 13.171642, 6, 'Stonehenge - Stage'],
         ];
 
-        function setMarkers(map, locations) {
+        var camps = [
+            ['basic', 47.820915, 13.171459, 5, 'Basic Camping'],
+            ['caravan', 47.823966, 13.178707, 7, 'Caravan-Camping'],
+            ['comfort', 47.823263, 13.179155, 8, 'Comfort-Camping']
+        ];
+
+        function setCamping(map, campsides) {
+            var image2 = '../img/max/camping_marker.png';
+            for (var i = 0; i< campsides.length; i++) {
+                var camp = campsides[i];
+                var campLatLng = new google.maps.LatLng(camp[1], camp[2]);
+                var marker_camp = new google.maps.Marker({
+                   position: campLatLng,
+                    map: map,
+                    icon: image2,
+                    title: camp[0],
+                    zIndex: camp[3],
+                    html: camp[4]
+                });
+                google.maps.event.addListener(marker_camp, 'click', function(){
+                    infowindow.setContent(this.html);
+                    infowindow.open(map, this);
+                });
+            }
+
+        }
+
+        function setStages(map, locations) {
             var image = '../img/max/stages_map.png';
 
             for (var i = 0; i < locations.length; i++) {
                 var place = locations[i];
                 var myLatLng = new google.maps.LatLng(place[1], place[2]);
-                var marker = new google.maps.Marker({
+                var marker_stage = new google.maps.Marker({
                     position: myLatLng,
                     map: map,
                     icon: image,
-                    title: place[0],
-                    zIndex: place[3]
+                    title: place [0],
+                    zIndex: place[3],
+                    html: place [4]
+                });
+                google.maps.event.addListener(marker_stage, 'click', function(){
+                   infowindow.setContent(this.html);
+                    infowindow.open(map, this);
                 });
             }
         }
@@ -48,14 +84,14 @@
     <title>Online Map</title>
 </head>
 
-<body>
-    <div class="content-info">
-        <a href="../index.html" class="js">
-            <div class="header_div">
+<body style="color: #000000">
+    <div class="content-info" style="color: #000000">
+        <a href="../index.html" class="js" style="color: #000000">
+            <div class="header_div" style="color: #000000">
                 <img src="../img/max/arrow_left_home.gif" class="header_arrow_home"/>
             </div>
         </a>
-        <div id="googleMap" style="width:100%;height:500px;"></div>
+        <div id="googleMap" style="width:100%;height:500px; color: #000000"></div>
     </div>
 </body>
 </html>
