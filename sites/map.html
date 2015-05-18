@@ -17,13 +17,32 @@
             setStages(map, places);
             setCamping(map, camps);
 
+
             infowindow = new google.maps.InfoWindow({
                 content: "loading..."
             });
+
+
+        var area_m1 = new google.maps.LatLng(47.823924, 13.174623);
+        var area_m2 = new google.maps.LatLng(47.823544, 13.174504);
+        var area_m3 = new google.maps.LatLng(47.822404, 13.175819);
+        var area_m4 = new google.maps.LatLng(47.822658, 13.176368);
+
+        var area_m = [area_m1,area_m2,area_m3,area_m4];
+        var flight = new google.maps.Polygon({
+            path:area_m,
+            strokeColor:"#000FF",
+            strokeOpacity:0.8,
+            strokeWeight:2,
+            fillColor:"#000FF",
+            fillOpacity:0.4,
+            zIndex: 1
+        });
+        flight.setMap(map);
         }
 
         var places = [
-                ['Mainstage', 47.823641, 13.174995, 1, 'Main - Stage'],
+                ['Mainstage', 47.823641, 13.174995, 9, 'Main - Stage'],
                 ['Clubcircus', 47.819711, 13.175657, 2, 'Clubcircus - Stage'],
                 ['qdance', 47.822762, 13.173973, 3, 'Q-Dance - Stage'],
                 ['heineken', 47.819755, 13.176511, 4, 'Heineken-Star Club'],
