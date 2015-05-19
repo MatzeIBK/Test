@@ -43,7 +43,7 @@ function initialize()
 }
 
 var places = [
-    ['Mainstage', 47.823581, 13.174882, 9, 'Main - Stage'],
+    ['Mainstage', 47.823581, 13.174882, 9, '<a href="../sites/stages/mainstage.html"style="text-decoration: none; color: #000000; font-family: elfFont">Main Stage</a>'],
     ['Clubcircus', 47.819711, 13.175657, 2, 'Clubcircus - Stage'],
     ['qdance', 47.822762, 13.173973, 3, 'Q-Dance - Stage'],
     ['heineken', 47.819755, 13.176511, 4, 'Heineken-Star Club'],
