@@ -31,6 +31,17 @@ function initialize()
         new google.maps.LatLng(47.823723, 13.175309)
     ];
 
+    var coordinates_clubcircus = [
+        new google.maps.LatLng(47.823291, 13.173913),
+        new google.maps.LatLng(47.822969, 13.173379),
+        new google.maps.LatLng(47.822729, 13.173574),
+        new google.maps.LatLng(47.822618, 13.173814),
+        new google.maps.LatLng(47.822558, 13.174118),
+        new google.maps.LatLng(47.822521, 13.174505),
+        new google.maps.LatLng(47.822687, 13.174864),
+        new google.maps.LatLng(47.822946, 13.174509)
+    ];
+
     var coordinates_caravanCamping = [
          new google.maps.LatLng(47.826982, 13.171333),
          new google.maps.LatLng(47.826660, 13.171068),
@@ -139,6 +150,16 @@ function initialize()
         zIndex: 1
     });
 
+    var path_clubcircus = new google.maps.Polygon({
+        paths: coordinates_clubcircus,
+        strokeColor:"#406339",
+        strokeOpacity:0.8,
+        strokeWeight:1,
+        fillColor:"#5C8F51",
+        fillOpacity:0.6,
+        zIndex: 1
+    });
+
     var path_caravanCamping = new google.maps.Polygon({
         paths: coordinates_caravanCamping,
         strokeColor:"#B56D07",
@@ -185,6 +206,7 @@ function initialize()
         infowindow.setPosition(new google.maps.LatLng(47.822972, 13.175609));
         infowindow.open(map);
     });
+    path_clubcircus.setMap(map);
     path_caravanCamping.setMap(map);
     path_parkingNorth.setMap(map);
     path_campingNorth.setMap(map);
