@@ -23,8 +23,8 @@
             });
 
 
-        var area_m1 = new google.maps.LatLng(47.823924, 13.174623);
-        var area_m2 = new google.maps.LatLng(47.823544, 13.174504);
+        var area_m1 = new google.maps.LatLng(47.823631, 13.175260);
+        var area_m2 = new google.maps.LatLng(47.823436, 13.174863);
         var area_m3 = new google.maps.LatLng(47.822404, 13.175819);
         var area_m4 = new google.maps.LatLng(47.822658, 13.176368);
 
@@ -39,10 +39,15 @@
             zIndex: 1
         });
         flight.setMap(map);
+            google.maps.event.addListener(flight, 'click', function(){
+                infowindow.setContent("Mainstage Area");
+                infowindow.setPosition(new google.maps.LatLng(47.822972, 13.175609));
+                infowindow.open(map);
+            });
         }
 
         var places = [
-                ['Mainstage', 47.823641, 13.174995, 9, 'Main - Stage'],
+                ['Mainstage', 47.823581, 13.174882, 9, 'Main - Stage'],
                 ['Clubcircus', 47.819711, 13.175657, 2, 'Clubcircus - Stage'],
                 ['qdance', 47.822762, 13.173973, 3, 'Q-Dance - Stage'],
                 ['heineken', 47.819755, 13.176511, 4, 'Heineken-Star Club'],

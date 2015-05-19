@@ -627,22 +627,20 @@
     padding: 0;
     text-align: center;
     font-family: elfFont;
-    font-size: 38px;
+    font-size: 34px;
     font-weight: bold;
     font-style: normal;
     color: #FFFFFF;
-    background-color: rgba(42, 42, 42, 0.90);
-    height: 80px;
+    height: 40px;
 }
 .title {
     border-style: none;
     text-align: center;
     font-family: elfFont;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     color: #FFFFFF;
-    background-color: rgba(42, 42, 42, 0.90);
-    height: 50px;
+    height: 40px;
 
 }
 .countdown_text {
@@ -651,10 +649,9 @@
     color: #ffffff;
     font-weight: bold;
     text-align: center;
-    background-color: rgba(42, 42, 42, 0.90);
-    margin-top: 50px;
+    margin-top: 20px;
     height: 100px;
-    line-height: 40px;
+    line-height: 45px;
 }
 
 
