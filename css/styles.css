@@ -2,19 +2,16 @@
             rgba(33, 42, 82, 1)  zu rgba(36, 87, 162, 1)*/
 
 .container {
-    height: 500px;
-    text-align: center;,
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
 }
 
-.container:before {
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-}
 
 .element {
+    height: auto;
     display: inline-block;
-    vertical-align: middle;  /* vertical alignment of the inline element */
 }
 
 .item_main {
@@ -68,8 +65,8 @@
 }
 
 .content-info {
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
@@ -502,48 +499,6 @@
     background-color: rgba(42, 42, 42, 0.70);
 }
 
-/* animation for shopping cart */
-
-.shopping:hover {
-    -webkit-animation: shopping 1s linear;
-    -moz-animation: shopping 1s linear;
-    animation: shopping 1s linear;
-}
-
-@-webkit-keyframes shopping {
-    0%   {left:0;}
-    50%  {left:100px;}
-    100% {left:0;}
-}
-@keyframes shopping {
-    0%   {left:0;}
-    50%  {left:200px;}
-    100% {left:0;}
-}
-
-/* animation for hourglass turning */
-.hourglass:hover {
-    -webkit-animation: glass 1s ease-in ;
-    -moz-animation: glass 1s ease-in ;
-    animation: glass 1s ease-in ;
-    animation-direction: alternate;
-}
-@-moz-keyframes glass {
-    0% { -moz-transform: rotateZ(0deg); }
-    100% { -moz-transform: rotateZ(180deg); }
-}
-@-webkit-keyframes glass {
-    0% { -webkit-transform: rotateZ(0deg); }
-    100% { -webkit-transform: rotateZ(180deg); } }
-@keyframes glass {
-    0% {
-        transform: rotateZ(0deg);
-    }
-    100% {
-        transform: rotateZ(180deg);
-    }
-}
-
 
 /* styles for merch.html*/
 
@@ -688,10 +643,7 @@ hr {
 }
 
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient( rgba(33,42,82,0.7), rgba(36,87,162,0.7)),  url("../img/background.png") center ;
+    background: linear-gradient( rgba(33,42,82,0.7), rgba(36,87,162,0.7),rgba(33,42,82,0.7)),  url("../img/background.png") center repeat ;
 }
 
 
