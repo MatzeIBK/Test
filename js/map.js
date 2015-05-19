@@ -42,6 +42,19 @@ function initialize()
         new google.maps.LatLng(47.822946, 13.174509)
     ];
 
+    var coordinates_qdance = [
+        new google.maps.LatLng(47.820212, 13.175070),
+        new google.maps.LatLng(47.820164, 13.174983),
+        new google.maps.LatLng(47.819694, 13.174819),
+        new google.maps.LatLng(47.819369, 13.174797),
+        new google.maps.LatLng(47.819208, 13.174817),
+        new google.maps.LatLng(47.819183, 13.175138),
+        new google.maps.LatLng(47.819323, 13.176072),
+        new google.maps.LatLng(47.819652, 13.175895),
+        new google.maps.LatLng(47.820152, 13.175817),
+        new google.maps.LatLng(47.820191, 13.175377)
+    ];
+
     var coordinates_caravanCamping = [
          new google.maps.LatLng(47.826982, 13.171333),
          new google.maps.LatLng(47.826660, 13.171068),
@@ -140,13 +153,19 @@ function initialize()
         new google.maps.LatLng(47.822031, 13.170899)
     ];
 
+    var coordinates_entranceSouth = [
+        new google.maps.LatLng(47.821525, 13.173490),
+        new google.maps.LatLng(47.821795, 13.173921),
+        new google.maps.LatLng(47.821927, 13.174808)
+    ];
+
     var path_main = new google.maps.Polygon({
         paths: coordinates_main,
         strokeColor:"#000FF",
         strokeOpacity:0.8,
         strokeWeight:1,
         fillColor:"#2457a2",
-        fillOpacity:0.6,
+        fillOpacity:0.7,
         zIndex: 1
     });
 
@@ -156,7 +175,17 @@ function initialize()
         strokeOpacity:0.8,
         strokeWeight:1,
         fillColor:"#5C8F51",
-        fillOpacity:0.6,
+        fillOpacity:0.7,
+        zIndex: 1
+    });
+
+    var path_qdance = new google.maps.Polygon({
+        paths: coordinates_qdance,
+        strokeColor:"#871C1C",
+        strokeOpacity:0.8,
+        strokeWeight:1,
+        fillColor:"#ED3B3B",
+        fillOpacity:0.7,
         zIndex: 1
     });
 
@@ -166,7 +195,7 @@ function initialize()
         strokeOpacity:0.8,
         strokeWeight:1,
         fillColor:"#EB963B",
-        fillOpacity:0.6,
+        fillOpacity:0.7,
         zIndex: 1
     });
 
@@ -176,7 +205,7 @@ function initialize()
         strokeOpacity:0.8,
         strokeWeight:1,
         fillColor:"#F0243C",
-        fillOpacity:0.6,
+        fillOpacity:0.7,
         zIndex: 1
     });
 
@@ -186,7 +215,7 @@ function initialize()
         strokeOpacity:0.8,
         strokeWeight:1,
         fillColor:"#4DB31E",
-        fillOpacity:0.6,
+        fillOpacity:0.7,
         zIndex: 1
     });
 
@@ -196,39 +225,65 @@ function initialize()
         strokeOpacity:0.8,
         strokeWeight:1,
         fillColor:"#373DED",
-        fillOpacity:0.6,
+        fillOpacity:0.7,
         zIndex: 1
+    });
+
+    var path_entranceSouth = new google.maps.Polyline({
+        path: coordinates_entranceSouth,
+        strokeColor:"red",
+        strokeOpacity:0.9,
+        strokeWeight:10
     });
 
     path_main.setMap(map);
     google.maps.event.addListener(path_main, 'click', function(){
-        infowindow.setContent("Mainstage Area");
+        infowindow.setContent("<p class='pag' style='font-family: elfFont'>Mainstage Area</p>");
         infowindow.setPosition(new google.maps.LatLng(47.822972, 13.175609));
         infowindow.open(map);
     });
     path_clubcircus.setMap(map);
+    path_qdance.setMap(map);
     path_caravanCamping.setMap(map);
     path_parkingNorth.setMap(map);
     path_campingNorth.setMap(map);
     path_campingSouth.setMap(map);
+    path_entranceSouth.setMap(map);
+
+
+
+    var entrance_marker = new google.maps.Marker({
+        position: new google.maps.LatLng(47.821850, 13.174311),
+        icon: '../img/maps/entrance_marker.png'
+    });
+
+    entrance_marker.setMap(map);
+    google.maps.event.addListener(entrance_marker, 'click', function () {
+       infowindow.setContent("<p class='pag' style='font-family: elfFont'>South Entrance</p>");
+        infowindow.setPosition(new google.maps.LatLng(47.821868, 13.174311));
+        infowindow.open(map);
+    });
+
 }
 
 var stages = [
     ['Mainstage', 47.823533, 13.175031, 9, '<p class="pag" style="font-family: elfFont">Main Stage</p><a href="../sites/stages/mainstage.html"style="font-family: elfFont">Timetable</a>'],
     ['Clubcircus', 47.822911, 13.174028, 2, '<p class="pag" style="font-family: elfFont">Club Circus</p><a href="../sites/stages/clubcircus.html"style="font-family: elfFont">Timetable</a>'],
-    ['qdance', 47.819322, 13.175875, 3, '<p class="pag" style="font-family: elfFont">Q-Dance Stage</p><a href="../sites/stages/qdance.html"style="font-family: elfFont">Timetable</a>'],
+    ['qdance', 47.819387, 13.175724, 3, '<p class="pag" style="font-family: elfFont">Q-Dance Stage</p><a href="../sites/stages/qdance.html"style="font-family: elfFont">Timetable</a>'],
     ['stonehenge', 47.819332, 13.176628, 6, '<p class="pag" style="font-family: elfFont">Stonehenge</p><a href="../sites/stages/stonehenge.html"style="font-family: elfFont">Timetable</a>']
 ];
 
 var camps = [
-    ['south', 47.820650, 13.170293, 5, "<p class='pag' style='font-family: elfFont'>Basic Camping - Area</p>"],
-    ['caravan', 47.825707, 13.171533, 7, "<p class='pag' style='font-family: elfFont'>Caravan Camping - Area</p>"],
-    ['north', 47.825411, 13.178014, 8, "<p class='pag' style='font-family: elfFont'>Camping North - Area</p>"]
+    ['south', 47.820650, 13.170293, 5, "<p class='pag' style='font-family: elfFont'>Campnig South</p>"],
+    ['caravan', 47.825707, 13.171533, 7, "<p class='pag' style='font-family: elfFont'>Camping Caravan</p>"],
+    ['north', 47.825411, 13.178014, 8, "<p class='pag' style='font-family: elfFont'>Camping North</p>"]
 ];
 
 var parking = [
     ['parkingNorth',47.828468, 13.175752, 4, "<p class='pag' style='font-family: elfFont'>Parking Camping - North</p>" ]
-]
+];
+
+
 
 
 function setCamping(map, campsides) {
