@@ -7,7 +7,8 @@ function initialize()
         mapTypeId: google.maps.MapTypeId.SATELLITE
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-    setMarker(map, stages);
+    setStages(map, stages);
+    setCamping(map, camps);
 
 
     infowindow = new google.maps.InfoWindow({
@@ -124,9 +125,9 @@ var camps = [
 ];
 
 
-function setMarker(map, campsides, stagesides) {
+function setCamping(map, campsides) {
 
-    /* setting up the camping markers*/
+    /* setting up the camping spots*/
     var img_camp = '../img/maps/camping_marker.png';
     for (var i = 0; i< campsides.length; i++) {
         var camp = campsides[i];
@@ -145,23 +146,6 @@ function setMarker(map, campsides, stagesides) {
         });
     }
 
-    /* setting up the stage markers*/
-    for (var i = 0; i < locations.length; i++) {
-        var stage = locations[i];
-        var myLatLng = new google.maps.LatLng(stage[1], stage[2]);
-        var marker_stage = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            icon: img_stage,
-            title: stage [0],
-            zIndex: stage[3],
-            html: stage [4]
-        });
-        google.maps.event.addListener(marker_stage, 'click', function(){
-            infowindow.setContent(this.html);
-            infowindow.open(map, this);
-        });
-    }
 }
 
 function setStages(map, locations) {
