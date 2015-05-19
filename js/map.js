@@ -43,11 +43,11 @@ function initialize()
 }
 
 var places = [
-    ['Mainstage', 47.823581, 13.174882, 9, '<a href="../sites/stages/mainstage.html"style="text-decoration: none; color: #000000; font-family: elfFont">Main Stage</a>'],
-    ['Clubcircus', 47.819711, 13.175657, 2, 'Clubcircus - Stage'],
-    ['qdance', 47.822762, 13.173973, 3, 'Q-Dance - Stage'],
-    ['heineken', 47.819755, 13.176511, 4, 'Heineken-Star Club'],
-    ['stonehenge', 47.821173, 13.171642, 6, 'Stonehenge - Stage'],
+    ['Mainstage', 47.823581, 13.174882, 9, '<p style="font-family: elfFont">Main Stage</p><a href="../sites/stages/mainstage.html"style="font-family: elfFont">Timetable</a>'],
+    ['Clubcircus', 47.819711, 13.175657, 2, '<p style="font-family: elfFont">Club Circus</p><a href="../sites/stages/clubcircus.html"style="font-family: elfFont">Timetable</a>'],
+    ['qdance', 47.822762, 13.173973, 3, '<p style="font-family: elfFont">Q-Dance Stage</p><a href="../sites/stages/qdance.html"style="font-family: elfFont">Timetable</a>'],
+    ['heineken', 47.819755, 13.176511, 4, '<p style="font-family: elfFont">Heineken Star Club</p><a href="../sites/stages/heineken.html"style="font-family: elfFont">Timetable</a>'],
+    ['stonehenge', 47.821173, 13.171642, 6, '<p style="font-family: elfFont">Stonehenge</p><a href="../sites/stages/stonehenge.html"style="font-family: elfFont">Timetable</a>'],
 ];
 
 var camps = [
