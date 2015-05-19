@@ -23,19 +23,22 @@
             });
 
 
-        var area_m1 = new google.maps.LatLng(47.823631, 13.175260);
-        var area_m2 = new google.maps.LatLng(47.823436, 13.174863);
-        var area_m3 = new google.maps.LatLng(47.822404, 13.175819);
-        var area_m4 = new google.maps.LatLng(47.822658, 13.176368);
+        var area_m = [
+                new google.maps.LatLng(47.823296, 13.174738),
+                new google.maps.LatLng(47.822796, 13.175265),
+                new google.maps.LatLng(47.822158, 13.175915),
+                new google.maps.LatLng(47.822529, 13.176531),
+                new google.maps.LatLng(47.823253, 13.175813),
+                new google.maps.LatLng(47.823642, 13.175409)
+        ]
 
-        var area_m = [area_m1,area_m2,area_m3,area_m4];
         var flight = new google.maps.Polygon({
-            path:area_m,
+            paths: area_m,
             strokeColor:"#000FF",
             strokeOpacity:0.8,
-            strokeWeight:2,
-            fillColor:"#000FF",
-            fillOpacity:0.4,
+            strokeWeight:1,
+            fillColor:"#2457a2",
+            fillOpacity:0.6,
             zIndex: 1
         });
         flight.setMap(map);
