@@ -10,6 +10,7 @@ function initialize()
     setStages(map, stages);
     setCamping(map, camps);
     setParking(map, parking);
+    setEntrances(map, entrances);
 
 
     infowindow = new google.maps.InfoWindow({
@@ -43,16 +44,26 @@ function initialize()
     ];
 
     var coordinates_qdance = [
-        new google.maps.LatLng(47.820212, 13.175070),
-        new google.maps.LatLng(47.820164, 13.174983),
-        new google.maps.LatLng(47.819694, 13.174819),
-        new google.maps.LatLng(47.819369, 13.174797),
-        new google.maps.LatLng(47.819208, 13.174817),
-        new google.maps.LatLng(47.819183, 13.175138),
-        new google.maps.LatLng(47.819323, 13.176072),
-        new google.maps.LatLng(47.819652, 13.175895),
-        new google.maps.LatLng(47.820152, 13.175817),
-        new google.maps.LatLng(47.820191, 13.175377)
+       new google.maps.LatLng(47.820168, 13.175917),
+       new google.maps.LatLng(47.819408, 13.176167),
+       new google.maps.LatLng(47.819366, 13.176188),
+       new google.maps.LatLng(47.819198, 13.174816),
+       new google.maps.LatLng(47.819491, 13.174796),
+       new google.maps.LatLng(47.819889, 13.174863),
+       new google.maps.LatLng(47.820168, 13.174965),
+       new google.maps.LatLng(47.820224, 13.175034)
+
+    ];
+
+    var coordinates_stonehenge = [
+        new google.maps.LatLng(47.820168, 13.1759179),
+        new google.maps.LatLng(47.819408, 13.1761679),
+        new google.maps.LatLng(47.819366, 13.1761889),
+        new google.maps.LatLng(47.819313, 13.1766959),
+        new google.maps.LatLng(47.819370, 13.1770759),
+        new google.maps.LatLng(47.819961, 13.1767139),
+        new google.maps.LatLng(47.820108, 13.1766719),
+        new google.maps.LatLng(47.820183, 13.1761659)
     ];
 
     var coordinates_caravanCamping = [
@@ -74,30 +85,6 @@ function initialize()
          new google.maps.LatLng(47.826652, 13.172102),
          new google.maps.LatLng(47.826781, 13.171628),
          new google.maps.LatLng(47.827015, 13.171343)
-    ];
-
-    var coordinates_parkingNorth = [
-         new google.maps.LatLng(47.827015, 13.171343),
-         new google.maps.LatLng(47.827892, 13.173935),
-         new google.maps.LatLng(47.826549, 13.175391),
-         new google.maps.LatLng(47.827160, 13.177780),
-         new google.maps.LatLng(47.827831, 13.178727),
-         new google.maps.LatLng(47.828961, 13.179410),
-         new google.maps.LatLng(47.829583, 13.179433),
-         new google.maps.LatLng(47.829546, 13.178957),
-         new google.maps.LatLng(47.829498, 13.178760),
-         new google.maps.LatLng(47.829615, 13.178389),
-         new google.maps.LatLng(47.829665, 13.178040),
-         new google.maps.LatLng(47.829983, 13.178057),
-         new google.maps.LatLng(47.830028, 13.177025),
-         new google.maps.LatLng(47.829819, 13.174623),
-         new google.maps.LatLng(47.829431, 13.172656),
-         new google.maps.LatLng(47.828762, 13.170372),
-         new google.maps.LatLng(47.828300, 13.170598),
-         new google.maps.LatLng(47.828065, 13.170167),
-         new google.maps.LatLng(47.827690, 13.170869),
-         new google.maps.LatLng(47.827487, 13.171092),
-         new google.maps.LatLng(47.827187, 13.171252)
     ];
 
     var coordinates_campingNorth = [
@@ -132,6 +119,55 @@ function initialize()
         new google.maps.LatLng(47.827015, 13.171343)
     ];
 
+    var coordinates_campingComfort = [
+        new google.maps.LatLng(47.821533, 13.1790499),
+        new google.maps.LatLng(47.821634, 13.1797709),
+        new google.maps.LatLng(47.821738, 13.1806779),
+        new google.maps.LatLng(47.821599, 13.1806539),
+        new google.maps.LatLng(47.821406, 13.1807939),
+        new google.maps.LatLng(47.821145, 13.1806749),
+        new google.maps.LatLng(47.820928, 13.1807219),
+        new google.maps.LatLng(47.820813, 13.1804209),
+        new google.maps.LatLng(47.820444, 13.1804759),
+        new google.maps.LatLng(47.820189, 13.1803839),
+        new google.maps.LatLng(47.820295, 13.1792929),
+        new google.maps.LatLng(47.820728, 13.1788669)
+    ];
+
+    var coordinates_parkingComfort = [
+       new google.maps.LatLng(47.821634, 13.179770),
+       new google.maps.LatLng(47.821738, 13.180677),
+       new google.maps.LatLng(47.822120, 13.181576),
+       new google.maps.LatLng(47.822919, 13.181042),
+       new google.maps.LatLng(47.823013, 13.180213),
+       new google.maps.LatLng(47.822747, 13.179059),
+       new google.maps.LatLng(47.822571, 13.179309),
+       new google.maps.LatLng(47.821954, 13.179546)
+    ];
+    var coordinates_parkingNorth = [
+        new google.maps.LatLng(47.827015, 13.171343),
+        new google.maps.LatLng(47.827892, 13.173935),
+        new google.maps.LatLng(47.826549, 13.175391),
+        new google.maps.LatLng(47.827160, 13.177780),
+        new google.maps.LatLng(47.827831, 13.178727),
+        new google.maps.LatLng(47.828961, 13.179410),
+        new google.maps.LatLng(47.829583, 13.179433),
+        new google.maps.LatLng(47.829546, 13.178957),
+        new google.maps.LatLng(47.829498, 13.178760),
+        new google.maps.LatLng(47.829615, 13.178389),
+        new google.maps.LatLng(47.829665, 13.178040),
+        new google.maps.LatLng(47.829983, 13.178057),
+        new google.maps.LatLng(47.830028, 13.177025),
+        new google.maps.LatLng(47.829819, 13.174623),
+        new google.maps.LatLng(47.829431, 13.172656),
+        new google.maps.LatLng(47.828762, 13.170372),
+        new google.maps.LatLng(47.828300, 13.170598),
+        new google.maps.LatLng(47.828065, 13.170167),
+        new google.maps.LatLng(47.827690, 13.170869),
+        new google.maps.LatLng(47.827487, 13.171092),
+        new google.maps.LatLng(47.827187, 13.171252)
+    ];
+
     var coordinates_campingSouth = [
         new google.maps.LatLng(47.822088, 13.171936),
         new google.maps.LatLng(47.821638, 13.172478),
@@ -156,12 +192,31 @@ function initialize()
     var coordinates_entranceSouth = [
         new google.maps.LatLng(47.821525, 13.173490),
         new google.maps.LatLng(47.821795, 13.173921),
-        new google.maps.LatLng(47.821927, 13.174808)
+        new google.maps.LatLng(47.821927, 13.174808),
+        new google.maps.LatLng(47.821750, 13.175074),
+        new google.maps.LatLng(47.821750, 13.175074),
+        new google.maps.LatLng(47.822328, 13.174809),
+        new google.maps.LatLng(47.822426, 13.174651),
+        new google.maps.LatLng(47.822520, 13.173847),
+        new google.maps.LatLng(47.822589, 13.173647),
+        new google.maps.LatLng(47.822776, 13.173363),
+        new google.maps.LatLng(47.823121, 13.173133),
+        new google.maps.LatLng(47.823169, 13.172868),
+        new google.maps.LatLng(47.823143, 13.171651),
+        new google.maps.LatLng(47.823068, 13.170102),
+        new google.maps.LatLng(47.822805, 13.169531),
+        new google.maps.LatLng(47.822793, 13.169369),
+        new google.maps.LatLng(47.822370, 13.168462),
+        new google.maps.LatLng(47.822240, 13.168331),
+        new google.maps.LatLng(47.821889, 13.168088),
+        new google.maps.LatLng(47.821584, 13.167404),
+        new google.maps.LatLng(47.821460, 13.166784)
+
     ];
 
     var path_main = new google.maps.Polygon({
         paths: coordinates_main,
-        strokeColor:"#000FF",
+        strokeColor:"#3A80E8",
         strokeOpacity:0.8,
         strokeWeight:1,
         fillColor:"#2457a2",
@@ -171,20 +226,30 @@ function initialize()
 
     var path_clubcircus = new google.maps.Polygon({
         paths: coordinates_clubcircus,
-        strokeColor:"#406339",
+        strokeColor:"#175413",
         strokeOpacity:0.8,
         strokeWeight:1,
-        fillColor:"#5C8F51",
+        fillColor:"#2C9926",
         fillOpacity:0.7,
         zIndex: 1
     });
 
     var path_qdance = new google.maps.Polygon({
         paths: coordinates_qdance,
-        strokeColor:"#871C1C",
+        strokeColor:"#2A2699",
         strokeOpacity:0.8,
         strokeWeight:1,
-        fillColor:"#ED3B3B",
+        fillColor:"#4640FF",
+        fillOpacity:0.7,
+        zIndex: 1
+    });
+
+    var path_stonehenge = new google.maps.Polygon({
+       paths: coordinates_stonehenge,
+        strokeColor:"#CC9037",
+        strokeOpacity: 0.9,
+        strokeWeight:1,
+        fillColor:"#FFB445",
         fillOpacity:0.7,
         zIndex: 1
     });
@@ -195,16 +260,6 @@ function initialize()
         strokeOpacity:0.8,
         strokeWeight:1,
         fillColor:"#EB963B",
-        fillOpacity:0.7,
-        zIndex: 1
-    });
-
-    var path_parkingNorth = new google.maps.Polygon({
-        paths: coordinates_parkingNorth,
-        strokeColor:"#851522",
-        strokeOpacity:0.8,
-        strokeWeight:1,
-        fillColor:"#F0243C",
         fillOpacity:0.7,
         zIndex: 1
     });
@@ -221,70 +276,95 @@ function initialize()
 
     var path_campingSouth = new google.maps.Polygon({
         paths: coordinates_campingSouth,
-        strokeColor:"#252994",
+        strokeColor:"#801D1D",
         strokeOpacity:0.8,
         strokeWeight:1,
-        fillColor:"#373DED",
+        fillColor:"#FF3636",
+        fillOpacity:0.7,
+        zIndex: 1
+    });
+
+    var path_campingComfort = new google.maps.Polygon({
+        paths: coordinates_campingComfort,
+        strokeColor:"#0C310C",
+        strokeOpacity:0.8,
+        strokeWeight:1,
+        fillColor:"#29A329",
+        fillOpacity:0.7,
+        zIndex: 1
+    });
+
+    var path_parkingComfort = new google.maps.Polygon({
+        paths: coordinates_parkingComfort,
+        strokeColor:"#660000",
+        strokeOpacity:0.8,
+        strokeWeight:1,
+        fillColor:"#CC0000",
+        fillOpacity:0.7,
+        zIndex: 1
+    });
+
+    var path_parkingNorth = new google.maps.Polygon({
+        paths: coordinates_parkingNorth,
+        strokeColor:"#851522",
+        strokeOpacity:0.8,
+        strokeWeight:1,
+        fillColor:"#F0243C",
         fillOpacity:0.7,
         zIndex: 1
     });
 
     var path_entranceSouth = new google.maps.Polyline({
         path: coordinates_entranceSouth,
-        strokeColor:"red",
+        strokeColor:"#00CCFF",
         strokeOpacity:0.9,
         strokeWeight:10
     });
 
     path_main.setMap(map);
     google.maps.event.addListener(path_main, 'click', function(){
-        infowindow.setContent("<p class='pag' style='font-family: elfFont'>Mainstage Area</p>");
+        infowindow.setContent("<p class='pag'>Mainstage Area</p>");
         infowindow.setPosition(new google.maps.LatLng(47.822972, 13.175609));
         infowindow.open(map);
     });
     path_clubcircus.setMap(map);
     path_qdance.setMap(map);
+    path_stonehenge.setMap(map);
     path_caravanCamping.setMap(map);
-    path_parkingNorth.setMap(map);
+    path_campingComfort.setMap(map);
     path_campingNorth.setMap(map);
     path_campingSouth.setMap(map);
+    path_parkingNorth.setMap(map);
+    path_parkingComfort.setMap(map);
     path_entranceSouth.setMap(map);
 
 
-
-    var entrance_marker = new google.maps.Marker({
-        position: new google.maps.LatLng(47.821850, 13.174311),
-        icon: '../img/maps/entrance_marker.png'
-    });
-
-    entrance_marker.setMap(map);
-    google.maps.event.addListener(entrance_marker, 'click', function () {
-       infowindow.setContent("<p class='pag' style='font-family: elfFont'>South Entrance</p>");
-        infowindow.setPosition(new google.maps.LatLng(47.821868, 13.174311));
-        infowindow.open(map);
-    });
-
+/* initialized finished*/
 }
 
 var stages = [
-    ['Mainstage', 47.823533, 13.175031, 9, '<p class="pag" style="font-family: elfFont">Main Stage</p><a href="../sites/stages/mainstage.html"style="font-family: elfFont">Timetable</a>'],
-    ['Clubcircus', 47.822911, 13.174028, 2, '<p class="pag" style="font-family: elfFont">Club Circus</p><a href="../sites/stages/clubcircus.html"style="font-family: elfFont">Timetable</a>'],
-    ['qdance', 47.819387, 13.175724, 3, '<p class="pag" style="font-family: elfFont">Q-Dance Stage</p><a href="../sites/stages/qdance.html"style="font-family: elfFont">Timetable</a>'],
-    ['stonehenge', 47.819332, 13.176628, 6, '<p class="pag" style="font-family: elfFont">Stonehenge</p><a href="../sites/stages/stonehenge.html"style="font-family: elfFont">Timetable</a>']
+    ['Mainstage', 47.823007, 13.175547, 9, '<p class="pag">Main Stage</p><a href="../sites/stages/mainstage.html"style="font-family: elfFont">Timetable</a>'],
+    ['Clubcircus', 47.822759, 13.173946, 2, '<p class="pag">Club Circus</p><a href="../sites/stages/clubcircus.html"style="font-family: elfFont">Timetable</a>'],
+    ['qdance', 47.819577, 13.175395, 3, '<p class="pag">Q-Dance Stage</p><a href="../sites/stages/qdance.html"style="font-family: elfFont">Timetable</a>'],
+    ['stonehenge', 47.819711, 13.176502, 6, '<p class="pag">Stonehenge</p><a href="../sites/stages/stonehenge.html"style="font-family: elfFont">Timetable</a>']
 ];
 
 var camps = [
-    ['south', 47.820650, 13.170293, 5, "<p class='pag' style='font-family: elfFont'>Campnig South</p>"],
-    ['caravan', 47.825707, 13.171533, 7, "<p class='pag' style='font-family: elfFont'>Camping Caravan</p>"],
-    ['north', 47.825411, 13.178014, 8, "<p class='pag' style='font-family: elfFont'>Camping North</p>"]
+    ['south', 47.820650, 13.170293, 5, "<p class='pag'>Campnig South</p>"],
+    ['caravan', 47.825707, 13.171533, 7, "<p class='pag'>Camping Caravan</p>"],
+    ['north', 47.825411, 13.178014, 8, "<p class='pag'>Camping North</p>"],
+    ['comfort', 47.820625, 13.179887, 6, "<p class='pag'>Comfort Camping</p>"]
 ];
 
 var parking = [
-    ['parkingNorth',47.828468, 13.175752, 4, "<p class='pag' style='font-family: elfFont'>Parking Camping - North</p>" ]
+    ['parkingNorth',47.828468, 13.175752, 4, "<p class='pag' style='font-family: elfFont'>Parking - Camping North</p>"],
+    ['parkingComfort',47.822062, 13.180255, 4, "<p class='pag' style='font-family: elfFont'>Parking - Comfort Camping</p>"],
 ];
 
-
-
+var entrances = [
+    ['south1', 47.821850, 13.174311, 4, "<p class='pag'>South Entrance 1</p>"],
+    ['south2', 47.822801, 13.169587, 5, "<p class='pag'>South Entrance 2</p>"]
+];
 
 function setCamping(map, campsides) {
 
@@ -306,12 +386,10 @@ function setCamping(map, campsides) {
             infowindow.open(map, this);
         });
     }
-
 }
 
 function setStages(map, locations) {
     var img_stage = '../img/maps/stages_marker.png';
-
     for (var i = 0; i < locations.length; i++) {
         var stage = locations[i];
         var myLatLng = new google.maps.LatLng(stage[1], stage[2]);
@@ -332,7 +410,6 @@ function setStages(map, locations) {
 
 function setParking(map, parks){
     var img_parking = '../img/maps/park_marker.png';
-
     for (var i = 0; i < parks.length; i++) {
         var parking = parks[i];
         var myLatLng = new google.maps.LatLng(parking[1], parking[2]);
@@ -345,6 +422,26 @@ function setParking(map, parks){
             html: parking [4]
         });
         google.maps.event.addListener(marker_parking, 'click', function(){
+            infowindow.setContent(this.html);
+            infowindow.open(map, this);
+        });
+    }
+}
+
+function setEntrances(map, entrance){
+    var img_entrance = '../img/maps/entrance_marker.png';
+    for(var i = 0; i < entrance.length; i++){
+        var ent = entrance[i];
+        var myLatLng = new google.maps.LatLng(ent[1], ent[2]);
+        var marker_entrance = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            icon: img_entrance,
+            title: ent[0],
+            zIndex: ent[3],
+            html: ent[4]
+        });
+        google.maps.event.addListener(marker_entrance, 'click', function () {
             infowindow.setContent(this.html);
             infowindow.open(map, this);
         });
