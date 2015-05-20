@@ -194,6 +194,7 @@ function initialize()
         new google.maps.LatLng(47.821795, 13.173921),
         new google.maps.LatLng(47.821927, 13.174808),
         new google.maps.LatLng(47.821750, 13.175074),
+        new google.maps.LatLng(47.821093, 13.175310),
         new google.maps.LatLng(47.821750, 13.175074),
         new google.maps.LatLng(47.822328, 13.174809),
         new google.maps.LatLng(47.822426, 13.174651),
@@ -211,7 +212,61 @@ function initialize()
         new google.maps.LatLng(47.821889, 13.168088),
         new google.maps.LatLng(47.821584, 13.167404),
         new google.maps.LatLng(47.821460, 13.166784)
+    ];
 
+
+
+    var coordinates_entranceNorth = [
+        new google.maps.LatLng(47.824876, 13.172456),
+        new google.maps.LatLng(47.824785, 13.172637),
+        new google.maps.LatLng(47.824857, 13.173253),
+        new google.maps.LatLng(47.824846, 13.173622),
+        new google.maps.LatLng(47.824721, 13.174029),
+        new google.maps.LatLng(47.824625, 13.174973),
+        new google.maps.LatLng(47.824428, 13.175549),
+        new google.maps.LatLng(47.824348, 13.176151),
+        new google.maps.LatLng(47.824281, 13.176325),
+        new google.maps.LatLng(47.824047, 13.176702),
+        new google.maps.LatLng(47.823974, 13.176966),
+        new google.maps.LatLng(47.823938, 13.177764),
+        new google.maps.LatLng(47.824298, 13.178248),
+        new google.maps.LatLng(47.823938, 13.177764),
+        new google.maps.LatLng(47.823170, 13.178028),
+        new google.maps.LatLng(47.822576, 13.179357),
+        new google.maps.LatLng(47.823170, 13.178028),
+        new google.maps.LatLng(47.822916, 13.177451),
+        new google.maps.LatLng(47.822328, 13.177342),
+        new google.maps.LatLng(47.822059, 13.177294),
+        new google.maps.LatLng(47.822024, 13.177005),
+        new google.maps.LatLng(47.822018, 13.176739),
+        new google.maps.LatLng(47.821475, 13.176280),
+        new google.maps.LatLng(47.821486, 13.176761),
+        new google.maps.LatLng(47.821215, 13.175486),
+        new google.maps.LatLng(47.821093, 13.175310),
+        new google.maps.LatLng(47.820929, 13.175134),
+        new google.maps.LatLng(47.820836, 13.175067),
+        new google.maps.LatLng(47.820224, 13.175034),
+        new google.maps.LatLng(47.820168, 13.175917),
+        new google.maps.LatLng(47.820183, 13.176165),
+        new google.maps.LatLng(47.820108, 13.176671),
+        new google.maps.LatLng(47.819978, 13.176727)
+
+    ];
+
+    var coordinates_entrance = [
+          new google.maps.LatLng(47.820516, 13.179008),
+          new google.maps.LatLng(47.820450, 13.178860),
+          new google.maps.LatLng(47.820626, 13.178585),
+          new google.maps.LatLng(47.820622, 13.178373),
+          new google.maps.LatLng(47.820676, 13.178223),
+          new google.maps.LatLng(47.820990, 13.177729),
+          new google.maps.LatLng(47.821025, 13.177617),
+          new google.maps.LatLng(47.821002, 13.177523),
+          new google.maps.LatLng(47.820896, 13.177435),
+          new google.maps.LatLng(47.820169, 13.176938),
+          new google.maps.LatLng(47.820035, 13.176903),
+          new google.maps.LatLng(47.819995, 13.176831),
+          new google.maps.LatLng(47.819978, 13.176727)
     ];
 
     var path_main = new google.maps.Polygon({
@@ -321,6 +376,20 @@ function initialize()
         strokeWeight:10
     });
 
+    var path_entranceNorth = new google.maps.Polyline({
+        path: coordinates_entranceNorth,
+        strokeColor:"#00CCFF",
+        strokeOpacity:0.9,
+        strokeWeight:10
+    });
+
+    var path_entrance = new google.maps.Polyline({
+        path: coordinates_entrance,
+        strokeColor:"#00CCFF",
+        strokeOpacity:0.9,
+        strokeWeight:10
+    })
+
     path_main.setMap(map);
     google.maps.event.addListener(path_main, 'click', function(){
         infowindow.setContent("<p class='pag'>Mainstage Area</p>");
@@ -337,6 +406,8 @@ function initialize()
     path_parkingNorth.setMap(map);
     path_parkingComfort.setMap(map);
     path_entranceSouth.setMap(map);
+    path_entranceNorth.setMap(map);
+    path_entrance.setMap(map);
 
 
 /* initialized finished*/
@@ -363,7 +434,9 @@ var parking = [
 
 var entrances = [
     ['south1', 47.821850, 13.174311, 4, "<p class='pag'>South Entrance 1</p>"],
-    ['south2', 47.822801, 13.169587, 5, "<p class='pag'>South Entrance 2</p>"]
+    ['south2', 47.822801, 13.169587, 5, "<p class='pag'>South Entrance 2</p>"],
+    ['north', 47.823170, 13.178028, 5, "<p class='pag'>North Entrance</p>"],
+    ['north', 47.820667, 13.177333, 5, "<p class='pag'>North Entrance</p>"]
 ];
 
 function setCamping(map, campsides) {
