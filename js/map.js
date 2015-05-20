@@ -239,8 +239,8 @@ function initialize()
         new google.maps.LatLng(47.822059, 13.177294),
         new google.maps.LatLng(47.822024, 13.177005),
         new google.maps.LatLng(47.822018, 13.176739),
-        new google.maps.LatLng(47.821475, 13.176280),
         new google.maps.LatLng(47.821486, 13.176761),
+        new google.maps.LatLng(47.821475, 13.176280),
         new google.maps.LatLng(47.821215, 13.175486),
         new google.maps.LatLng(47.821093, 13.175310),
         new google.maps.LatLng(47.820929, 13.175134),
@@ -250,6 +250,7 @@ function initialize()
         new google.maps.LatLng(47.820183, 13.176165),
         new google.maps.LatLng(47.820108, 13.176671),
         new google.maps.LatLng(47.819978, 13.176727)
+
 
     ];
 
@@ -373,21 +374,21 @@ function initialize()
         path: coordinates_entranceSouth,
         strokeColor:"#00CCFF",
         strokeOpacity:0.9,
-        strokeWeight:10
+        strokeWeight:7
     });
 
     var path_entranceNorth = new google.maps.Polyline({
         path: coordinates_entranceNorth,
         strokeColor:"#00CCFF",
         strokeOpacity:0.9,
-        strokeWeight:10
+        strokeWeight:7
     });
 
     var path_entrance = new google.maps.Polyline({
         path: coordinates_entrance,
         strokeColor:"#00CCFF",
         strokeOpacity:0.9,
-        strokeWeight:10
+        strokeWeight:7
     })
 
     path_main.setMap(map);
