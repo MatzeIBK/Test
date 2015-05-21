@@ -391,25 +391,18 @@ function initialize()
         strokeWeight:7
     })
 
-    path_main.setMap(map);
-    google.maps.event.addListener(path_main, 'click', function(){
-        infowindow.setContent("<p class='pag'>Mainstage Area</p>");
-        infowindow.setPosition(new google.maps.LatLng(47.822972, 13.175609));
-        infowindow.open(map);
-    });
-    path_clubcircus.setMap(map);
-    path_qdance.setMap(map);
-    path_stonehenge.setMap(map);
-    path_caravanCamping.setMap(map);
-    path_campingComfort.setMap(map);
-    path_campingNorth.setMap(map);
-    path_campingSouth.setMap(map);
-    path_parkingNorth.setMap(map);
-    path_parkingComfort.setMap(map);
-    path_entranceSouth.setMap(map);
-    path_entranceNorth.setMap(map);
-    path_entrance.setMap(map);
+    var paths = [
+        path_campingComfort, path_campingNorth, path_campingSouth, path_caravanCamping, path_clubcircus, path_entrance,
+        path_entranceNorth, path_entranceSouth, path_main, path_parkingComfort, path_parkingNorth, path_qdance, path_stonehenge
+    ];
 
+    function setMap (paths){
+        for(var i = 0; i<paths.length; i++){
+            var p = paths[i];
+            p.setMap(map);
+        }
+    }
+    setMap(paths);
 
 /* initialized finished*/
 }
