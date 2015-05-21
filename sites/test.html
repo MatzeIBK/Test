@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>hammer</title>
+    <link href="../css/hammer.css" rel="stylesheet" type="text/css"/>
+    <script src="../js/hammer.js"></script>
+    <script>
+        var dom   = document.body,
+            width = parseInt($('#square').css('width')),
+            vel   = 5.0,
+            min   = 100,
+            max   = 400,
+            scale;
+
+    function gestureChange( e ) {
+        e.preventDefault();
+
+        scale = e.scale;
+
+        var tempWidth = width * scale;
+
+        if ( tempWidth > max ) tempWidth = max;
+        if ( tempWidth < min ) tempWidth = min;
+
+        $( '#square' ).css( {
+            width  : tempWidth + 'px',
+            height : tempWidth + 'px'
+        } );
+    }
+
+    function gestureEnd( e ) {
+        e.preventDefault();
+
+        width = parseInt( $( '#square' ).css( 'width' ) );
+    }
+
+    Hammer( square ).on( 'pinch', gestureChange );
+    </script>
+</head>
+<body>
+
+<p>
+    Pinch anywhere. The blue square should expand or shrink (to a degree). The red circle should stay the same.
+</p>
+
+<div class="wrapper">
+    <div class="wrap">
+        <div id="circle"></div>
+    </div>
+    <div class="wrap">
+        <div id="square"></div>
+    </div>
+</div>
+</body>
+</html>
