@@ -1,15 +1,19 @@
 /* Farbverlauf von: #212a52 Zu #2457a2
             rgba(33, 42, 82, 1)  zu rgba(36, 87, 162, 1)*/
 
-.containerbox {
+html, body {
     height: 100%;
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-    overflow: hidden;
-    position: relative;
 }
-
+.parent {
+    width: 100%;
+    height: 100%;
+    display: table;
+    text-align: center;
+}
+.parent > .child {
+    display: table-cell;
+    vertical-align: middle;
+}
 
 .element {
     height: auto;
