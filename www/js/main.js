@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('body').css('display', 'none');
-    $('body').fadeIn(850);
+    $('body').fadeIn(500);
 /*
     $('.js').click(function(event) {
         event.preventDefault();
