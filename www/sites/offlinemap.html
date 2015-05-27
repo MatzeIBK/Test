@@ -1,8 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=true">
 
     <!-- Bootstrap init -->
     <script src="../js/jquery-1.11.2.min.js"></script>
@@ -21,62 +20,36 @@
 
     <title>Electric Love Festival Offline Map</title>
 
-    <script>
-        var hammertime = Hammer(document.getElementById('zoomwrapper1'), {
-            transform_always_block: true,
-            transform_min_scale: 1,
-            drag_block_horizontal: true,
-            drag_block_vertical: true,
-            drag_min_distance: 0
-        });
+    <script>var dom   = document.body,
+            width = parseInt($('#square').css('width')),
+            vel   = 5.0,
+            min   = 100,
+            max   = 400,
+            scale;
 
-        var posX=0, posY=0,
-                lastPosX=0, lastPosY=0,
-                bufferX=0, bufferY=0,
-                scale=1, last_scale,
-                rotation= 1, last_rotation, dragReady=0;
+    function gestureChange( e ) {
+        e.preventDefault();
 
-        hammertime.on('touch drag dragend transform', function(ev) {
-            elemRect = document.getElementById('zoom1');
-            manageMultitouch(ev);
-        });
+        scale = e.scale;
 
-        function manageMultitouch(ev){
+        var tempWidth = width * scale;
 
-            switch(ev.type) {
-                case 'touch':
-                    last_scale = scale;
-                    last_rotation = rotation;
+        if ( tempWidth > max ) tempWidth = max;
+        if ( tempWidth < min ) tempWidth = min;
 
-                    break;
+        $( '#square' ).css( {
+            width  : tempWidth + 'px',
+            height : tempWidth + 'px'
+        } );
+    }
 
-                case 'drag':
-                    posX = ev.gesture.deltaX + lastPosX;
-                    posY = ev.gesture.deltaY + lastPosY;
-                    break;
+    function gestureEnd( e ) {
+        e.preventDefault();
 
-                case 'transform':
-                    rotation = last_rotation + ev.gesture.rotation;
-                    scale = Math.max(1, Math.min(last_scale * ev.gesture.scale, 10));
-                    break;
+        width = parseInt( $( '#square' ).css( 'width' ) );
+    }
 
-                case 'dragend':
-                    lastPosX = posX;
-                    lastPosY = posY;
-                    break;
-            }
-
-            var transform =
-                    "translate3d("+posX+"px,"+posY+"px, 0) " +
-                    "scale3d("+scale+","+scale+", 0) " +
-                    "rotate("+rotation+"deg) ";
-
-            elemRect.style.transform = transform;
-            elemRect.style.oTransform = transform;
-            elemRect.style.msTransform = transform;
-            elemRect.style.mozTransform = transform;
-            elemRect.style.webkitTransform = transform;
-        }
+    Hammer( square ).on( 'pinch', gestureChange );
     </script>
 </head>
 
@@ -89,14 +62,18 @@
             </div>
         </a>
 -->
-        <div id="zoomwrapper1">
-            <div id="zoom1" class="zoomProps">
-                <div id="rect1" class="polaroid">
-                    <img src="../img/djs/alesso.jpg" alt="" width="200" height="200" />
-                    <span>Coco</span>
-                </div>
-            </div>
-        </div>
+<p>
+    Pinch anywhere. The blue square should expand or shrink (to a degree). The red circle should stay the same.
+</p>
+
+<div class="wrapper">
+    <div class="wrap">
+        <div id="circle"></div>
+    </div>
+    <div class="wrap">
+        <div id="square"></div>
+    </div>
+</div>
 
         <!--        <img src="../img/max/offlinemap.jpg" class="img-responsive"/>
     </div>-->
