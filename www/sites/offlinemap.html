@@ -1,73 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <script type="application/javascript" src="../js/iscroll.js"></script>
 
-    <!-- Bootstrap init -->
-    <script src="../js/jquery-1.11.2.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="phonegap.js"></script>
+    <script type="text/javascript">
+        var myScroll;
+        function loaded() {
+            myScroll = new iScroll('wrapper',
+                    { zoom:true, zoomMax: 4 });
+        }
 
-    <!-- Styles init -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css"/>
-    <link rel="stylesheet" href="../css/bootstrap-theme.min.css" type="text/css"/>
-    <link rel="stylesheet" href="../css/normalize.css" type="text/css"/>
-    <link rel="stylesheet" href="../css/hammer.css" type="text/css"/>
-    <!-- <link href="../css/styles.css" rel="stylesheet" type="text/css"/> -->
-
-
-    <title>Electric Love Festival Offline Map</title>
-
-    <script>$(window).load(function() {
-        var height, image, newX, newY, offset, testScale, width, wrap;
-        image = $('#image');
-        wrap = $('#wrap');
-        width = image.width();
-        height = image.height();
-        offset = wrap.offset();
-        newX = 0;
-        newY = 0;
-        testScale = 1;
-        image.click(function(event) {
-            testScale = event.ctrlKey ? testScale - 0.4 : testScale + 0.4;
-            return pinch(event.clientX, event.clientY, testScale);
-        });
-        return window.pinch = function(x, y, scale) {
-            var newHeight, newWidth;
-            newWidth = image.width() * scale;
-            newHeight = image.height() * scale;
-            x -= offset.left + newX;
-            y -= offset.top + newY;
-            newX += -x * (newWidth - width) / newWidth;
-            newY += -y * (newHeight - height) / newHeight;
-            image.css('-webkit-transform', "scale3d(" + scale + ", " + scale + ", 1)");
-            wrap.css('-webkit-transform', "translate3d(" + newX + "px, " + newY + "px, 0)");
-            width = newWidth;
-            return height = newHeight;
-        };
-    });
+        document.addEventListener('DOMContentLoaded', loaded, false);
     </script>
+    <style type="text/css">
+        div#wrapper img { -webkit-transform:translate3d(0,0,0) }
+    </style>
+
 </head>
+<bod>
+    <div id="wrapper" style="width:100%">
+        <img src="../img/djs/alesso.jpg" width="800" alt="" style="max-width:100%; height:auto;">
+    </div>
 
-<body><!--
-    <div class="content-info">
-        <a href="../index.html" style="color: white; text-decoration: none;">
-            <div class="header_div" style="color: white">
-                <img src="../img/max/arrow_left_back.gif" class="header_arrow_back"/>
-                Offline Map
-            </div>
-        </a>
--->
-
-<div id="wrap">
-    <img id="image" src="http://placekitten.com/g/200/300" />
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
-
-
-        <!--        <img src="../img/max/offlinemap.jpg" class="img-responsive"/>
-    </div>-->
-</body>
+    <script>loaded();</script>
+</bod>
 </html>
