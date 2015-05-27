@@ -15,11 +15,6 @@ html, body {
     vertical-align: middle;
 }
 
-.element {
-    height: auto;
-    display: inline-block;
-}
-
 .item_main {
     height: 80px;
     width: 60px;
