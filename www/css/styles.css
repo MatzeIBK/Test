@@ -96,6 +96,20 @@ html, body {
 
 /* styles for map.html*/
 
+.google-maps {
+    position: relative;
+    padding-bottom: 120%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps #googleMap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
 .pag {
     margin: 18px 0 8px 0;
     font-family: elfFont;
