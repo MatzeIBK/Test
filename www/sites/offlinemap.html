@@ -1,34 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <script type="application/javascript" src="../js/iscroll.js"></script>
 
+    <script type="text/javascript">
+        var myScroll;
+        function loaded() {
+            myScroll = new iScroll('wrapper',
+                    { zoom:true, zoomMax: 4 });
+        }
 
-    <!-- Bootstrap init -->
-    <script src="../js/jquery-1.11.2.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="phonegap.js"></script>
+        document.addEventListener('DOMContentLoaded', loaded, false);
+    </script>
+    <style type="text/css">
+        div#wrapper img { -webkit-transform:translate3d(0,0,0) }
+    </style>
 
-    <!-- Styles init -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css"/>
-    <link rel="stylesheet" href="../css/bootstrap-theme.min.css" type="text/css"/>
-    <link rel="stylesheet" href="../css/normalize.css" type="text/css"/>
-    <link href="../css/styles.css" rel="stylesheet" type="text/css"/>
-
-
-    <title>Electric Love Festival Offline Map</title>
 </head>
-
-<body>
-    <div class="content-info">
-        <a href="../index.html" style="color: white; text-decoration: none;">
-            <div class="header_div" style="color: white">
-                <img src="../img/max/arrow_left_back.gif" class="header_arrow_back"/>
-                Offline Map
-            </div>
-        </a>
-        <img src="../img/max/offlinemap.jpg" class="img-responsive"/>
+<bod>
+    <div id="wrapper" style="width:100%">
+        <img src="../img/djs/alesso.jpg" width="800" alt="" style="max-width:100%; height:auto;">
     </div>
-</body>
+
+    <script>loaded();</script>
+</bod>
 </html>
