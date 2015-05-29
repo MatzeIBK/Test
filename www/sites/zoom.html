@@ -23,7 +23,8 @@
                 scrollX: true,
                 scrollY: true,
                 mouseWheel: true,
-                wheelAction: 'zoom'
+                wheelAction: 'zoom',
+                zoomMax: 8
             });
         }
         document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
@@ -51,11 +52,12 @@
         #wrapper {
             position: absolute;
             z-index: 1;
-            top: 50px;
-            bottom: 50px;
-            left: 50px;
-            right: 50px;
+            top: 5px;
+            bottom: 5px;
+            left: 5px;
+            right: 5px;
             overflow: hidden;
+            margin-top: 55px;
         }
         #scroller {
             position: absolute;
@@ -89,14 +91,21 @@
     </style>
 </head>
 <body onload="loaded()">
-
-<div id="wrapper">
-    <div id="scroller">
-        <ul>
-           <li><img src="../img/max/offlinemap.jpg" class="img-responsive"></li>
-        </ul>
+    <div class="content-info">
+        <a href="../index.html" style="text-decoration: none">
+            <div class="header_div">
+                <img src="../img/max/arrow_left_back.gif" class="header_arrow_back"/>
+                Offline Map
+            </div>
+        </a>
+        <div id="wrapper">
+            <div id="scroller">
+                <ul>
+                   <li><img src="../img/max/offlinemap.jpg" class="img-responsive"></li>
+                </ul>
+            </div>
+        </div>
     </div>
-</div>
 
 </body>
 </html>
