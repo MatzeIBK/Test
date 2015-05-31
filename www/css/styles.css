@@ -166,8 +166,16 @@ html, body {
     border-radius: 0;
 }
 
+.try.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background-color: red;
+}
+
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
     background-color: rgba(36, 87, 162, 1);
+}
+
+.nav>li>a {
+    padding: 7px 2px 7px 2px;
 }
 
 .options {
@@ -181,6 +189,7 @@ html, body {
     text-decoration: none;
     color: #ffffff;
     font-size: 20px;
+    padding: 0;
 
 }
 
