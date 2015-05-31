@@ -178,7 +178,7 @@ html, body {
 }
 
 .nav>li>a {
-    padding: 7px 2px 7px 2px;
+    padding: 7px 2px 5px 2px;
 }
 
 .options {
@@ -231,6 +231,7 @@ html, body {
     height: 25px;
     line-height: 25px;
     font-size: 16px;
+    font-family: elfFontBold;
 }
 
 .tt-modal-dialog {
