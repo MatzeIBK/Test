@@ -158,8 +158,11 @@ html, body {
 .pill {
     padding: 0;
     margin: 0 -2px 0 0;
-    border: 2px solid #808080;
+    border-bottom: 2px solid #808080;
+    border-right: 2px solid #808080;
+    border-top: 2px solid #808080;
     border-radius: 0;
+
 }
 
 .nav-pills>li>a {
@@ -188,7 +191,8 @@ html, body {
 .tt_tab {
     text-decoration: none;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: bold;
     padding: 0;
 
 }
