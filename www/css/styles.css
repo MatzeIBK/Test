@@ -192,7 +192,7 @@ html, body {
     text-decoration: none;
     color: #ffffff;
     font-size: 17px;
-    font-weight: bold;
+    font-family: elfFontBold;
     padding: 0;
 
 }
@@ -665,6 +665,10 @@ html, body {
 @font-face {
     font-family: elfFont;
     src: url(../fonts/Exo-DemiBold-Italic.otf);
+}
+@font-face {
+    font-family: elfFontBold;
+    src: url(../fonts/Exo-DemiBold.otf);
 }
 
 /* smaller margins to the horizontal divider*/
