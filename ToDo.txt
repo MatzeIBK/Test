@@ -1,10 +1,4 @@
 ﻿ToDo:
-
-    - Mit Hilfe von Jquery Skelette ausfüllen
-    - MySQL datenbank anlegen und auslessen
-    - möglicher zwischenschritt benötigt, AJAX
-
-
     STYLES:
 
     - styles auslagern
