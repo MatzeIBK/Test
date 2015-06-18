@@ -426,7 +426,7 @@ function initialize()
         }
     }
     setMap(paths);
-/* initialized finished*/
+    /* initialized finished*/
 }
 
 function getLocation() {
