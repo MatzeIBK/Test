@@ -98,7 +98,7 @@ html, body {
 
 .google-maps {
     position: relative;
-    padding-bottom: 120%; // This is the aspect ratio
+    padding-bottom: 120%; /*This is the aspect ratio */
     height: 0;
     overflow: hidden;
 }
@@ -108,6 +108,13 @@ html, body {
     left: 0;
     width: 100% !important;
     height: 100% !important;
+}
+
+.finder {
+    background-color: rgba(209, 0, 0, 0.7);
+    font-family: elfFont;
+    padding: 4px;
+    margin-bottom: 5px;
 }
 
 .pag {
