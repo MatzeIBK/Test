@@ -352,6 +352,17 @@ html, body {
     background-color: rgba(42, 42, 42, 0.70);
 }
 
+.headerTest {
+    height: 50px;
+    margin-bottom: 5px;
+    background-color: rgba(110, 110, 110, 0.7);
+    color: #ffffff;
+    text-align: center;
+    font-family: elfFont;
+    line-height: 50px;
+    font-size: 25px
+}
+
 .header_back {
     background-color: rgba(110, 110, 110, 0.7);
     font-size: 18px;
