@@ -24,7 +24,7 @@ function initialize()
 
     center = new google.maps.Marker({
         map: map,
-        icon: '../img/maps/center.png',
+        icon: '../img/maps/maps_center_marker.png',
         animation: google.maps.Animation.DROP
     });
     google.maps.event.addListener(center, 'click', toggleBounce);
@@ -503,7 +503,7 @@ var entrances = [
 function setCamping(map, campsides) {
 
     /* setting up the camping spots*/
-    var img_camp = '../img/maps/camping_marker.png';
+    var img_camp = '../img/maps/maps_camping_marker.png';
     for (var i = 0; i< campsides.length; i++) {
         var camp = campsides[i];
         var campLatLng = new google.maps.LatLng(camp[1], camp[2]);
@@ -523,7 +523,7 @@ function setCamping(map, campsides) {
 }
 
 function setStages(map, locations) {
-    var img_stage = '../img/maps/stages_marker.png';
+    var img_stage = '../img/maps/maps_stages_marker.png';
     for (var i = 0; i < locations.length; i++) {
         var stage = locations[i];
         var myLatLng = new google.maps.LatLng(stage[1], stage[2]);
@@ -543,7 +543,7 @@ function setStages(map, locations) {
 }
 
 function setParking(map, parks){
-    var img_parking = '../img/maps/park_marker.png';
+    var img_parking = '../img/maps/maps_park_marker.png';
     for (var i = 0; i < parks.length; i++) {
         var parking = parks[i];
         var myLatLng = new google.maps.LatLng(parking[1], parking[2]);
@@ -563,7 +563,7 @@ function setParking(map, parks){
 }
 
 function setEntrances(map, entrance){
-    var img_entrance = '../img/maps/entrance_marker.png';
+    var img_entrance = '../img/maps/maps_entrance_marker.png';
     for(var i = 0; i < entrance.length; i++){
         var ent = entrance[i];
         var myLatLng = new google.maps.LatLng(ent[1], ent[2]);
