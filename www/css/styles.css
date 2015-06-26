@@ -370,6 +370,9 @@ html, body {
 .header_div:hover {
     background-color: rgba(42, 42, 42, 0.70);
 }
+.header_fixed:hover {
+    background-color: rgba(42, 42, 42, 0.70);
+}
 
 .headerTest {
     height: 50px;
