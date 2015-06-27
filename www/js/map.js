@@ -441,7 +441,6 @@ function showPosition(position) {
     var latitude  = position.coords.latitude;
     var longitude = position.coords.longitude;
     var userCoordinates = new google.maps.LatLng(latitude, longitude);
-    alert("Hello");
 
     /*Handler for find me button*/
     document.getElementById("getLoc").addEventListener("click", function () {
@@ -451,7 +450,6 @@ function showPosition(position) {
         google.maps.event.addListener(center, 'click', function() {
             infowindow.setContent('<p class="pag">You are here!</p>');
             infowindow.open(map, center);
-            alert("Hello");
         });
 
     });

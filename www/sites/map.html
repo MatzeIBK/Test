@@ -14,13 +14,15 @@
 
 <body style="height: auto">
 <div class="content-info" style="padding: 0; margin: 0 0 5px 0; height: auto">
-    <div class="headerMap" style="z-index: 2">
-        <a href="../index.html" style="text-decoration: none">
+    <div class="header_div">
+        <a href="../index.html" style="text-decoration: none; color: white">
             <img src="../img/max/arrow_left_back.gif" class="header_arrow_back"/>
-            <em class="header_div" style="background-color: transparent">Map</em>
+            Map
         </a>
-        <div style="float: right; height: 50px" id="getLoc" onclick="getLocation()"><img src="../img/max/gps.png" style="height: 40px; margin: 5px 5px 0 0"></div>
+        <!--<div style="float: right; height: 50px" id="getLoc" onclick="getLocation()"><img src="../img/max/gps.png" style="height: 40px; margin: 5px 5px 0 0"></div>-->
+    <button style="float: right; height: 50px; width: 50px;" id="getLoc" onclick="getLocation()"></button>
     </div>
+
 
     <div class="col-xs-12 finder">Activate GPS on your device to see your position!</div>
     <div class="google-maps">
