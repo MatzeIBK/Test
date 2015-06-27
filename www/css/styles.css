@@ -279,6 +279,8 @@ html, body {
     text-align: justify;
     padding: 10px;
     margin-bottom: 10px;
+    height: 150px;
+    overflow-y: scroll;
 }
 
 .stage_row:hover .stage_img {
@@ -323,7 +325,7 @@ html, body {
 }
 
 .header_fixed {
-    background-color: rgba(69, 69, 69, 1);
+    background-color: rgba(33, 42, 82, 1);
     position: fixed;
     margin-top: -5px;
     margin-left: -5px;
@@ -359,7 +361,7 @@ html, body {
 .header_div {
     height: 50px;
     margin-bottom: 5px;
-    background-color: rgba(69, 69, 69, 1);
+    background-color: rgba(33, 42, 82, 1);
     color: #ffffff;
     text-align: center;
     font-family: elfFont;
@@ -367,17 +369,11 @@ html, body {
     font-size: 25px
 }
 
-.header_div:hover {
-    background-color: rgba(42, 42, 42, 0.70);
-}
-.header_fixed:hover {
-    background-color: rgba(42, 42, 42, 0.70);
-}
 
-.headerTest {
+.headerMap {
     height: 50px;
     margin-bottom: 5px;
-    background-color: rgba(110, 110, 110, 0.7);
+    background-color: rgba(33, 42, 82, 1);
     color: #ffffff;
     text-align: center;
     font-family: elfFont;
@@ -473,7 +469,7 @@ html, body {
     text-align: left;
     margin: 0;
     padding-left: 10px;
-    background-color: rgba(69, 69, 69, 1);
+    background-color: rgba(33, 42, 82, 1);
     border-bottom: 1px solid #ffffff;
 }
 
@@ -592,6 +588,7 @@ html, body {
     line-height: 40px;
     background-color: rgba(163, 22, 0, 0.85);
     font-family: elfFont;
+    margin-top: 50px;
 
 }
 
