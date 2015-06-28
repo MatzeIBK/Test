@@ -115,6 +115,8 @@ html, body {
     font-family: elfFont;
     padding: 4px;
     margin-bottom: 5px;
+    height: 40px;
+    line-height: 40px;
 }
 
 .pag {
@@ -332,14 +334,15 @@ html, body {
     padding: 5px;
     width: 100%;
     height: 50px;
-    z-index: 1
+    z-index: 1;
+    line-height: 45px;
 }
 
 .header_text {
     color: #ffffff;
     text-align: center;
     font-family: elfFont;
-    line-height: 45px;
+
     font-size: 25px
 }
 
