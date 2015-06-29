@@ -5,6 +5,7 @@
     <meta name="viewport" id="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
 
     <!-- Bootstrap init -->
+
     <script src="../../js/jquery-1.11.2.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
     <script src="phonegap.js"></script>
@@ -20,69 +21,62 @@
     <title>Electric Love Festival</title>
 
     <style>
-        html,body {
-            height:100%;
-            margin:0;
-        }
-        body {
-            overflow-y: hidden;
-        }
-        #main_wrapper {
-            width: 100%;
+        html, body {
             height: 100%;
-            padding: 5px;
-        }
-        #content_wrapper {
-            display: block;
-            overflow-y: scroll;
-            height: 100%;
-        }
-        #inner_content {
-            width: 100%;
-            background: #999;
+
         }
     </style>
-
 </head>
 
-<body>
-<div id="main_wrapper">
-        <div class="headerTest">Artist</div>
-        <div class="artist_social" style="text-align: center">
-            <span><a href="http://steveaoki.com/"><img src="../../img/social/home.gif" class="artist_soc_btn"
-                                                       onmouseover="this.src='../../img/social/home_hover.gif'"
-                                                       onmouseout="this.src='../../img/social/home.gif'"/></a>
-        </span>
-
-        <span><a href="https://www.facebook.com/Steve.Aoki"><img src="../../img/social/facebookW.gif" class="artist_soc_btn"
-                                                                 onmouseover="this.src='../../img/social/facebook_hover.gif'"
-                                                                 onmouseout="this.src='../../img/social/facebookW.gif'"/></a>
-        </span>
-
-       <span><a href="https://soundcloud.com/steveaoki"><img src="../../img/social/soundcloud.gif" class="artist_soc_btn"
-                                                             onmouseover="this.src='../../img/social/soundcloud_hover.gif'"
-                                                             onmouseout="this.src='../../img/social/soundcloud.gif'"/></a>
-        </span>
-        <span><a href="https://www.youtube.com/user/steveaokiofficial"><img src="../../img/social/youtubeS.gif" class="artist_soc_btn"
-                                                                            onmouseover="this.src='../../img/social/youtubeS_hover.gif'"
-                                                                            onmouseout="this.src='../../img/social/youtubeS.gif'"/></a>
-        </span>
-        </div>
-    <div class="artist_social" style="margin: 0 0 5px 0; border: none; font-family: elfFont; line-height: 40px; text-align: center">
-        Mainstage: 22:00-23:00!
-    </div>
-
-        <div id="content_wrapper" class="col-xs-12" style="padding: 0">
-            <div id="inner_content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo justo. Praesent varius fermentum nisl nec luctus. Pellentesque eu risus eleifend nulla vestibulum malesuada in in erat. In hac habitasse platea dictumst. Integer aliquam justo id sapien ornare iaculis. Fusce aliquam aliquam convallis. Ut est dui, aliquet at iaculis a, vulputate id dolor.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo justo. Praesent varius fermentum nisl nec luctus. Pellentesque eu risus eleifend nulla vestibulum malesuada in in erat. In hac habitasse platea dictumst. Integer aliquam justo id sapien ornare iaculis. Fusce aliquam aliquam convallis. Ut est dui, aliquet at iaculis a, vulputate id dolor.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo justo. Praesent varius fermentum nisl nec luctus. Pellentesque eu risus eleifend nulla vestibulum malesuada in in erat. In hac habitasse platea dictumst. Integer aliquam justo id sapien ornare iaculis. Fusce aliquam aliquam convallis. Ut est dui, aliquet at iaculis a, vulputate id dolor.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo justo. Praesent varius fermentum nisl nec luctus. Pellentesque eu risus eleifend nulla vestibulum malesuada in in erat. In hac habitasse platea dictumst. Integer aliquam justo id sapien ornare iaculis. Fusce aliquam aliquam convallis. Ut est dui, aliquet at iaculis a, vulputate id dolor.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo justo. Praesent varius fermentum nisl nec luctus. Pellentesque eu risus eleifend nulla vestibulum malesuada in in erat. In hac habitasse platea dictumst. Integer aliquam justo id sapien ornare iaculis. Fusce aliquam aliquam convallis. Ut est dui, aliquet at iaculis a, vulputate id dolor.</p>
+<body style="color: white">
+    <div id="header">
+        <a href="../artists.html" style="text-decoration: none">
+            <div class="header_fixed" style="top: 5px; left: 5px;">
+                <img src="../../img/max/arrow_left_back.gif" class="header_arrow_back" style="margin: 5px -70px 0 10px; "/>
+                <em class="header_text">Artists</em>
             </div>
-        </div>
+        </a>
+    </div>
+    <div id="img" style="top: 50px; position: fixed">
+        <img src="../../img/djs_slider/alesso_slider.jpg" style="height: 150px">
+    </div>
+    <div class="artist_social col-xs-12" style="position: fixed; top: 195px;">
+        <span><a href="http://alessoworld.com/home/"><img src="../../img/social/home.gif" class="artist_soc_btn"
+                                                          onmouseover="this.src='../../img/social/home_hover.gif'"
+                                                          onmouseout="this.src='../../img/social/home.gif'"/></a>
+        </span>
 
-</div>
+        <span><a href="https://www.facebook.com/AlessoOfficial"><img src="../../img/social/facebookW.gif" class="artist_soc_btn"
+                                                                     onmouseover="this.src='../../img/social/facebook_hover.gif'"
+                                                                     onmouseout="this.src='../../img/social/facebookW.gif'"/></a>
+        </span>
+
+       <span><a href="https://soundcloud.com/alesso"><img src="../../img/social/soundcloud.gif" class="artist_soc_btn"
+                                                          onmouseover="this.src='../../img/social/soundcloud_hover.gif'"
+                                                          onmouseout="this.src='../../img/social/soundcloud.gif'"/></a>
+        </span>
+        <span><a href="https://www.youtube.com/user/AlessoOfficial"><img src="../../img/social/youtubeS.gif" class="artist_soc_btn"
+                                                                         onmouseover="this.src='../../img/social/youtubeS_hover.gif'"
+                                                                         onmouseout="this.src='../../img/social/youtubeS.gif'"/></a>
+        </span>
+    </div>
+    <div class="col-xs-12 artist_stage" style="position: fixed; top: 240px;">Mainstage: 22:00-23:00!</div>
+    
+    <div class="container-fluid" style="margin-top: 285px;">
+     Alesso ist ein schwedischer DJ, Produzent und Remixer im Bereich House und Progressive.
+            Seine erste Produktion veröffentlichte Alesso 2010 mit den Songs Think It's Time, Workaholic,
+            Moma und Loose It. Schließlich wurde er von Sebastian Ingrossos Label Refune Records unter Vertrag
+            genommen. Besonders erfolgreich war Nillionaire. Seinen Durchbruch hatte Alesso 2011 mit seinem Remix des Liedes Pressure der pakistanischen Sängerin
+            Nadia Ali. Pressure wurde vielfach von bekannten DJs wie Armin van Buuren, Tiësto, Kaskade, Calvin
+            Harris und der Swedish House Mafia gespielt. Der Remix gewann ebenfalls den International Dance Music
+            Award als Best Progressive Track . 2012 folgte der nächste Hit Calling (Lose My Mind) in Zusammenarbeit mit Sebastian Ingrosso und dem OneRepublic
+            Frontman Ryan Tedder. Daraufhin veröffentlichte Alesso weitere Vocaltracks, wie Years mit Matthew Koma und City of Dreams mit Dirty South.
+            Im Frühjahr 2013 erschien sein Remix des Liedes If I Lose Myself von OneRepublic und er verhalf dem Lied wieder auf hohe Chartplatzierungen.
+            Gemeinsam mit dem britischen Dance-Pop-Duos Hurts und Calvin Harris produzierte er 2013 den Song Under Control. Der
+            Track verschaffte ihm hohe Chart-Platzierungen in sämtlichen europäischen Ländern.
+            Im Herbst 2014 kooperierte er mit der schwedischen Sängerin Tove Lo, woraus der Track Heroes entstand.
+
+    </div>
 
 </body>
 </html>

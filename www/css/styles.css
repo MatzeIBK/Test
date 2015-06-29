@@ -336,6 +336,7 @@ html, body {
     height: 50px;
     z-index: 1;
     line-height: 45px;
+    text-align: center;
 }
 
 .header_text {
@@ -517,9 +518,19 @@ html, body {
 .artist_social {
     height: 40px;
     margin-top: 5px;
-    background-color: rgba(110, 110, 110, 0.7);
+    background-color: rgba(33, 42, 82, 1);
     color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+    text-align: center;
+}
+
+.artist_stage {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(33, 42, 82, 1);
+    color: white;
+    font-family: elfFontBold;
+    font-size: 17px;
 }
 
 .artist_soc_btn {
